@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class NelsonMartell\Version | nelson6e65/php_nml</title>
+
+	<script type="text/javascript" src="resources/combined.js?823466903"></script>
+	<script type="text/javascript" src="elementlist.js?645470223"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-58599811-1"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-NelsonMartell.html">NelsonMartell<span></span></a>
+						<ul>
+				<li><a href="namespace-NelsonMartell.Collections.html">Collections</a>
+						</li>
+				<li><a href="namespace-NelsonMartell.Utilities.html">Utilities<span></span></a>
+						<ul>
+				<li><a href="namespace-NelsonMartell.Utilities.UnitTesting.html">UnitTesting</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-NelsonMartell.IntString.html">IntString</a></li>
+				<li><a href="class-NelsonMartell.Object.html">Object</a></li>
+				<li><a href="class-NelsonMartell.Type.html">Type</a></li>
+				<li class="active"><a href="class-NelsonMartell.Version.html">Version</a></li>
+				<li><a href="class-NelsonMartell.VersionComponent.html">VersionComponent</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-NelsonMartell.IEquatable.html">IEquatable</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-NelsonMartell.html" title="Summary of NelsonMartell"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Version</h1>
+
+
+	<div class="description">
+	
+<p>Representa el número de versión de un elemento o ensamblado, de la forma
+"1.0.0.0". Sólo siendo obligatorios el primer y segundo componente. No se puede
+heredar esta clase.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-NelsonMartell.Object.html"><span>NelsonMartell\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>NelsonMartell\Version</span></b>			
+			 implements 
+				<a href="class-NelsonMartell.IEquatable.html"><span>NelsonMartell\IEquatable</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		<b>Final</b><br />
+		
+		<b>Namespace:</b> <a href="namespace-NelsonMartell.html">NelsonMartell</a><br />
+		<b>Package:</b> NelsonMartell<br />
+
+				<b>Author:</b>
+				Nelson Martell (@yahoo.es: nelson6e65-dev)<br />
+		<b>Located at</b> <a href="source-class-NelsonMartell.Version.html#30-220" title="Go to source code">Version.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-NelsonMartell.Version.html#48-72" title="Go to source code">__construct</a>( <span>mixed <var>$major</var> = <span class="php-num">0</span></span>, <span>mixed <var>$minor</var> = <span class="php-num">0</span></span>, <span>mixed <var>$build</var> = <span class="php-num">0</span></span>, <span>mixed <var>$revision</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NelsonMartell.Object.html#___construct">NelsonMartell\Object::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Parse" id="_Parse">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Parse">#</a>
+		<code><a href="source-class-NelsonMartell.Version.html#75-108" title="Go to source code">Parse</a>( <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_Major" id="_get_Major">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_Major">#</a>
+		<code><a href="source-class-NelsonMartell.Version.html#122" title="Go to source code">get_Major</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_Minor" id="_get_Minor">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_Minor">#</a>
+		<code><a href="source-class-NelsonMartell.Version.html#133" title="Go to source code">get_Minor</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_Build" id="_get_Build">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_Build">#</a>
+		<code><a href="source-class-NelsonMartell.Version.html#143" title="Go to source code">get_Build</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_Revision" id="_get_Revision">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_Revision">#</a>
+		<code><a href="source-class-NelsonMartell.Version.html#153" title="Go to source code">get_Revision</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ToString" id="_ToString">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ToString">#</a>
+		<code><a href="source-class-NelsonMartell.Version.html#167-181" title="Go to source code">ToString</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NelsonMartell.Object.html#_ToString">NelsonMartell\Object::ToString()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="IsValid" id="_IsValid">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_IsValid">#</a>
+		<code><a href="source-class-NelsonMartell.Version.html#188-200" title="Go to source code">IsValid</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Equals" id="_Equals">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Equals">#</a>
+		<code><a href="source-class-NelsonMartell.Version.html#207-219" title="Go to source code">Equals</a>( <span>mixed <var>$other</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NelsonMartell.Object.html#_Equals">NelsonMartell\Object::Equals()</a></code></div>
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-NelsonMartell.IEquatable.html#_Equals">NelsonMartell\IEquatable::Equals()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-NelsonMartell.Object.html#methods">NelsonMartell\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-NelsonMartell.Object.html#_GetType">GetType()</a>, 
+			<a href="class-NelsonMartell.Object.html#___get">__get()</a>, 
+			<a href="class-NelsonMartell.Object.html#___set">__set()</a>, 
+			<a href="class-NelsonMartell.Object.html#___toString">__toString()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="Major" id="$Major">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NelsonMartell.Version.html#119" title="Go to source code"><var>$Major</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$Major" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="Minor" id="$Minor">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NelsonMartell.Version.html#130" title="Go to source code"><var>$Minor</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$Minor" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="Build" id="$Build">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NelsonMartell.Version.html#140" title="Go to source code"><var>$Build</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$Build" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="Revision" id="$Revision">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NelsonMartell.Version.html#150" title="Go to source code"><var>$Revision</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$Revision" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		nelson6e65/php_nml API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

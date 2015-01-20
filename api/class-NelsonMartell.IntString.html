@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class NelsonMartell\IntString | nelson6e65/php_nml</title>
+
+	<script type="text/javascript" src="resources/combined.js?823466903"></script>
+	<script type="text/javascript" src="elementlist.js?645470223"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-58599811-1"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-NelsonMartell.html">NelsonMartell<span></span></a>
+						<ul>
+				<li><a href="namespace-NelsonMartell.Collections.html">Collections</a>
+						</li>
+				<li><a href="namespace-NelsonMartell.Utilities.html">Utilities<span></span></a>
+						<ul>
+				<li><a href="namespace-NelsonMartell.Utilities.UnitTesting.html">UnitTesting</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-NelsonMartell.IntString.html">IntString</a></li>
+				<li><a href="class-NelsonMartell.Object.html">Object</a></li>
+				<li><a href="class-NelsonMartell.Type.html">Type</a></li>
+				<li><a href="class-NelsonMartell.Version.html">Version</a></li>
+				<li><a href="class-NelsonMartell.VersionComponent.html">VersionComponent</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-NelsonMartell.IEquatable.html">IEquatable</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-NelsonMartell.html" title="Summary of NelsonMartell"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class IntString</h1>
+
+
+	<div class="description">
+	
+<p>Clase base de objetos, para encapsular propiedades y otros métodos
+básicos.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-NelsonMartell.Object.html"><span>NelsonMartell\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>NelsonMartell\IntString</span></b>			
+			 implements 
+				<a href="class-NelsonMartell.IEquatable.html"><span>NelsonMartell\IEquatable</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-NelsonMartell.VersionComponent.html">NelsonMartell\VersionComponent</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-NelsonMartell.html">NelsonMartell</a><br />
+		<b>Package:</b> NelsonMartell<br />
+
+				<b>Author:</b>
+				Nelson Martell (@yahoo.es: nelson6e65-dev)<br />
+				<b>Example:</b>
+				Para usar los getter y setter de los atributos como propiedades, el atributo
+debe ser privado y su nombre tipo cammel, iniciando con $_, y su propiedad para
+get/set debe iniciar en Mayúscula, sin '_'. Ejemplo: private $_nombre = '';
+//Atributo public $Nombre; //Propiedad para acceder a $_nombre Luego, las
+respectivas funciones siguiendo el formato "get_" o "set_", seguido del nombre
+de la propiedad. public function get_Nombre() { return $this-&gt;_nombre; }
+public function set_Nombre(string $value) { // Validaciones $this-&gt;_nombre =
+$value; } Además, para habilitar esta funcionalidad de propiedades, el
+constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
+		<b>Located at</b> <a href="source-class-NelsonMartell.IntString.html#35-95" title="Go to source code">IntString.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-NelsonMartell.IntString.html#37-42" title="Go to source code">__construct</a>( <span>mixed <var>$intValue</var> = <span class="php-num">0</span></span>, <span>mixed <var>$stringValue</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NelsonMartell.Object.html#___construct">NelsonMartell\Object::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Parse" id="_Parse">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Parse">#</a>
+		<code><a href="source-class-NelsonMartell.IntString.html#44-64" title="Go to source code">Parse</a>( <span>mixed <var>$parseableString</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_IntValue" id="_get_IntValue">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_IntValue">#</a>
+		<code><a href="source-class-NelsonMartell.IntString.html#71-73" title="Go to source code">get_IntValue</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_StringValue" id="_get_StringValue">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_StringValue">#</a>
+		<code><a href="source-class-NelsonMartell.IntString.html#76-78" title="Go to source code">get_StringValue</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ToString" id="_ToString">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ToString">#</a>
+		<code><a href="source-class-NelsonMartell.IntString.html#80-82" title="Go to source code">ToString</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NelsonMartell.Object.html#_ToString">NelsonMartell\Object::ToString()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Equals" id="_Equals">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Equals">#</a>
+		<code><a href="source-class-NelsonMartell.IntString.html#84-94" title="Go to source code">Equals</a>( <span>mixed <var>$other</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NelsonMartell.Object.html#_Equals">NelsonMartell\Object::Equals()</a></code></div>
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-NelsonMartell.IEquatable.html#_Equals">NelsonMartell\IEquatable::Equals()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-NelsonMartell.Object.html#methods">NelsonMartell\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-NelsonMartell.Object.html#_GetType">GetType()</a>, 
+			<a href="class-NelsonMartell.Object.html#___get">__get()</a>, 
+			<a href="class-NelsonMartell.Object.html#___set">__set()</a>, 
+			<a href="class-NelsonMartell.Object.html#___toString">__toString()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="IntValue" id="$IntValue">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NelsonMartell.IntString.html#70" title="Go to source code"><var>$IntValue</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$IntValue" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="StringValue" id="$StringValue">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NelsonMartell.IntString.html#75" title="Go to source code"><var>$StringValue</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$StringValue" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		nelson6e65/php_nml API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

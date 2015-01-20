@@ -104,6 +104,11 @@
 	<h1>Class Assert</h1>
 
 
+	<div class="description">
+	
+<p>Comprueba condiciones de pruebas.</p>
+
+	</div>
 
 
 
@@ -117,9 +122,11 @@
 		<b>Final</b><br />
 		
 		<b>Namespace:</b> <a href="namespace-NelsonMartell.html">NelsonMartell</a>\<a href="namespace-NelsonMartell.Utilities.html">Utilities</a>\<a href="namespace-NelsonMartell.Utilities.UnitTesting.html">UnitTesting</a><br />
-		
+		<b>Package:</b> NelsonMartell\Utilities\UnitTesting<br />
 
-		<b>Located at</b> <a href="source-class-NelsonMartell.Utilities.UnitTesting.Assert.html#43-241" title="Go to source code">Utilities/UnitTesting/Assert.php</a><br />
+				<b>Author:</b>
+				Nelson Martell (@yahoo.es: nelson6e65-dev)<br />
+		<b>Located at</b> <a href="source-class-NelsonMartell.Utilities.UnitTesting.Assert.html#33-240" title="Go to source code">Utilities/UnitTesting/Assert.php</a><br />
 	</div>
 
 
@@ -130,24 +137,43 @@
 
 		<td class="attributes"><code>
 			 public static
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_AreEqual">#</a>
-		<code><a href="source-class-NelsonMartell.Utilities.UnitTesting.Assert.html#71-86" title="Go to source code">AreEqual</a>( <span>mixed <var>$expected</var></span>, <span>mixed <var>$actual</var></span>, <span>mixed <var>$msg</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-NelsonMartell.Utilities.UnitTesting.Assert.html#61-84" title="Go to source code">AreEqual</a>( <span>string <var>$expected</var></span>, <span>mixed <var>$actual</var></span>, <span>mixed <var>$msg</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			
+<p>Comprueba si los dos objetos especificados son iguales. Caso contrario, emite
+una advertencia.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Comprueba si los dos objetos especificados son iguales. Caso contrario, emite
+una advertencia.</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expected</var></dt>
+					<dd><code>string</code><br>$msg Custom message to append on assert failed.</dd>
+					<dt><var>$actual</var></dt>
+					<dd></dd>
+					<dt><var>$msg</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>true si son iguales; false, en caso contrario.<br />
+				</div>
 
 
 
@@ -159,24 +185,43 @@
 
 		<td class="attributes"><code>
 			 public static
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_AreNotEqual">#</a>
-		<code><a href="source-class-NelsonMartell.Utilities.UnitTesting.Assert.html#98-112" title="Go to source code">AreNotEqual</a>( <span>mixed <var>$notExpected</var></span>, <span>mixed <var>$actual</var></span>, <span>mixed <var>$msg</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-NelsonMartell.Utilities.UnitTesting.Assert.html#88-110" title="Go to source code">AreNotEqual</a>( <span>string <var>$notExpected</var></span>, <span>mixed <var>$actual</var></span>, <span>mixed <var>$msg</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			
+<p>Comprueba si los dos objetos especificados NO son iguales. En caso de que sí
+lo sean, emite una advertencia.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Comprueba si los dos objetos especificados NO son iguales. En caso de que sí
+lo sean, emite una advertencia.</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$notExpected</var></dt>
+					<dd><code>string</code><br>$msg Custom message to append on assert failed.</dd>
+					<dt><var>$actual</var></dt>
+					<dd></dd>
+					<dt><var>$msg</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>true si NO son iguales; false, en caso contrario.<br />
+				</div>
 
 
 
@@ -195,7 +240,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_IsTrue">#</a>
-		<code><a href="source-class-NelsonMartell.Utilities.UnitTesting.Assert.html#115-117" title="Go to source code">IsTrue</a>( <span>mixed <var>$actual</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Utilities.UnitTesting.Assert.html#113-115" title="Go to source code">IsTrue</a>( <span>mixed <var>$actual</var></span> )</code>
 
 		<div class="description short">
 			
@@ -224,7 +269,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_IsFalse">#</a>
-		<code><a href="source-class-NelsonMartell.Utilities.UnitTesting.Assert.html#119-121" title="Go to source code">IsFalse</a>( <span>mixed <var>$actual</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Utilities.UnitTesting.Assert.html#117-119" title="Go to source code">IsFalse</a>( <span>mixed <var>$actual</var></span> )</code>
 
 		<div class="description short">
 			
@@ -246,24 +291,47 @@
 
 		<td class="attributes"><code>
 			 public static
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_MethodThrowsException">#</a>
-		<code><a href="source-class-NelsonMartell.Utilities.UnitTesting.Assert.html#134-185" title="Go to source code">MethodThrowsException</a>( <span>mixed <var>$method_name</var></span>, <span>mixed <var>$obj</var></span>, <span>mixed <var>$params</var> = <span class="php-keyword1">array</span>()</span>, <span>Exception <var>$expectedException</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$msg</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-NelsonMartell.Utilities.UnitTesting.Assert.html#121-184" title="Go to source code">MethodThrowsException</a>( <span>string <var>$method_name</var></span>, <span>mixed <var>$obj</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span>, <span>Exception <var>$expectedException</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$msg</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			
+<p>Comprueba que, si al llamar un método público de un objeto, se obtiene una
+excepción del tipo especificado.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Comprueba que, si al llamar un método público de un objeto, se obtiene una
+excepción del tipo especificado.</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method_name</var></dt>
+					<dd><code>string</code><br>$method_name Method name.</dd>
+					<dt><var>$obj</var></dt>
+					<dd><code>mixed</code><br>$obj Object to check.</dd>
+					<dt><var>$params</var></dt>
+					<dd><code>array</code><br>$params Method params.</dd>
+					<dt><var>$expectedException</var></dt>
+					<dd><code>Exception</code><br>$expectedException Exception to check type. If null, checks any.</dd>
+					<dt><var>$msg</var></dt>
+					<dd><code>string</code><br>$msg Custom message to append on assert failed.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
 
 
 
@@ -282,7 +350,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_PropertyThrowsException">#</a>
-		<code><a href="source-class-NelsonMartell.Utilities.UnitTesting.Assert.html#189-239" title="Go to source code">PropertyThrowsException</a>( <span>mixed <var>$obj</var></span>, <span>mixed <var>$property_name</var></span>, <span>mixed <var>$value</var></span>, <span>Exception <var>$expectedException</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$msg</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-NelsonMartell.Utilities.UnitTesting.Assert.html#188-238" title="Go to source code">PropertyThrowsException</a>( <span>mixed <var>$obj</var></span>, <span>mixed <var>$property_name</var></span>, <span>mixed <var>$value</var></span>, <span>Exception <var>$expectedException</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$msg</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			

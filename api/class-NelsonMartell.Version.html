@@ -152,7 +152,7 @@ heredar esta clase.</p>
 
 				<b>Author:</b>
 				Nelson Martell (@yahoo.es: nelson6e65-dev)<br />
-		<b>Located at</b> <a href="source-class-NelsonMartell.Version.html#30-220" title="Go to source code">Version.php</a><br />
+		<b>Located at</b> <a href="source-class-NelsonMartell.Version.html#30-224" title="Go to source code">Version.php</a><br />
 	</div>
 
 
@@ -170,19 +170,29 @@ heredar esta clase.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-NelsonMartell.Version.html#48-72" title="Go to source code">__construct</a>( <span>mixed <var>$major</var> = <span class="php-num">0</span></span>, <span>mixed <var>$minor</var> = <span class="php-num">0</span></span>, <span>mixed <var>$build</var> = <span class="php-num">0</span></span>, <span>mixed <var>$revision</var> = <span class="php-num">0</span></span> )</code>
+		<code><a href="source-class-NelsonMartell.Version.html#41-72" title="Go to source code">__construct</a>( <span>mixed <var>$major</var> = <span class="php-num">0</span></span>, <span>mixed <var>$minor</var> = <span class="php-num">0</span></span>, <span>mixed <var>$build</var> = <span class="php-num">0</span></span>, <span>mixed <var>$revision</var> = <span class="php-num">0</span></span> )</code>
 
 		<div class="description short">
 			
+<p>Crea una nueva instancia con los números principal, secundario, de
+compilación (opcional) y revisión (opcional).</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Crea una nueva instancia con los números principal, secundario, de
+compilación (opcional) y revisión (opcional).</p>
 
 
 
 
 
+
+				<h4>Exceptions</h4>
+				<div class="list">
+						InvalidArgumentException, OutOfRangeException<br />
+				</div>
 
 				<h4>Overrides</h4>
 				<div class="list"><code><a href="class-NelsonMartell.Object.html#___construct">NelsonMartell\Object::__construct()</a></code></div>
@@ -230,7 +240,7 @@ heredar esta clase.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_Major">#</a>
-		<code><a href="source-class-NelsonMartell.Version.html#122" title="Go to source code">get_Major</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Version.html#119" title="Go to source code">get_Major</a>( )</code>
 
 		<div class="description short">
 			
@@ -259,7 +269,7 @@ heredar esta clase.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_Minor">#</a>
-		<code><a href="source-class-NelsonMartell.Version.html#133" title="Go to source code">get_Minor</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Version.html#131" title="Go to source code">get_Minor</a>( )</code>
 
 		<div class="description short">
 			
@@ -288,7 +298,7 @@ heredar esta clase.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_Build">#</a>
-		<code><a href="source-class-NelsonMartell.Version.html#143" title="Go to source code">get_Build</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Version.html#142" title="Go to source code">get_Build</a>( )</code>
 
 		<div class="description short">
 			
@@ -339,24 +349,41 @@ heredar esta clase.</p>
 
 		<td class="attributes"><code>
 			 public 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_ToString">#</a>
-		<code><a href="source-class-NelsonMartell.Version.html#167-181" title="Go to source code">ToString</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Version.html#156-182" title="Go to source code">ToString</a>( )</code>
 
 		<div class="description short">
 			
+<p>Convierte la instancia actual en su representación en cadena. Por defecto,
+si no se especifica el número de revisión (o es menor a 1), no se incluye en
+la salida. Si tampoco se especifica el número de compilación (o es menor a 1),
+tampoco se incluye el número de revisión. Los componentes principal y
+secundario siempre se muestran, aunque sean cero (0).</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Convierte la instancia actual en su representación en cadena. Por defecto,
+si no se especifica el número de revisión (o es menor a 1), no se incluye en
+la salida. Si tampoco se especifica el número de compilación (o es menor a 1),
+tampoco se incluye el número de revisión. Los componentes principal y
+secundario siempre se muestran, aunque sean cero (0).</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Representación de la versión en forma de cadena:
+'major.minor[.build[.revision]]'<br />
+				</div>
 
 
 
@@ -370,24 +397,34 @@ heredar esta clase.</p>
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_IsValid">#</a>
-		<code><a href="source-class-NelsonMartell.Version.html#188-200" title="Go to source code">IsValid</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Version.html#184-203" title="Go to source code">IsValid</a>( )</code>
 
 		<div class="description short">
 			
+<p>Indica si la instancia actual es un número de versión válido. Al menos un
+atributo de la versión debe estar establecido.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Indica si la instancia actual es un número de versión válido. Al menos un
+atributo de la versión debe estar establecido.</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Un valor que indica si la instancia actual es válida.<br />
+				</div>
 
 
 
@@ -399,24 +436,34 @@ heredar esta clase.</p>
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_Equals">#</a>
-		<code><a href="source-class-NelsonMartell.Version.html#207-219" title="Go to source code">Equals</a>( <span>mixed <var>$other</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Version.html#205-223" title="Go to source code">Equals</a>( <span>mixed <var>$other</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Determina si el objeto $other especificado es igual a la instancia
+actual.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Determina si el objeto $other especificado es igual a la instancia
+actual.</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>True si $other es igual esta instancia<br />
+				</div>
 
 
 
@@ -457,11 +504,11 @@ heredar esta clase.</p>
 	<tr data-order="Major" id="$Major">
 		<td class="attributes"><code>
 			public  
-			mixed
+			integer
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.Version.html#119" title="Go to source code"><var>$Major</var></a>
+				<a href="source-class-NelsonMartell.Version.html#110-116" title="Go to source code"><var>$Major</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -469,10 +516,16 @@ heredar esta clase.</p>
 
 			<div class="description short">
 				
+<p>Obtiene el valor del componente principal del número de versión del objeto
+actual.</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>Obtiene el valor del componente principal del número de versión del objeto
+actual.</p>
+
 
 			</div>
 		</div></td>
@@ -480,11 +533,11 @@ heredar esta clase.</p>
 	<tr data-order="Minor" id="$Minor">
 		<td class="attributes"><code>
 			public  
-			mixed
+			integer
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.Version.html#130" title="Go to source code"><var>$Minor</var></a>
+				<a href="source-class-NelsonMartell.Version.html#122-128" title="Go to source code"><var>$Minor</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -492,10 +545,16 @@ heredar esta clase.</p>
 
 			<div class="description short">
 				
+<p>Obtiene el valor del componente secundario del número de versión del objeto
+actual.</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>Obtiene el valor del componente secundario del número de versión del objeto
+actual.</p>
+
 
 			</div>
 		</div></td>
@@ -503,11 +562,11 @@ heredar esta clase.</p>
 	<tr data-order="Build" id="$Build">
 		<td class="attributes"><code>
 			public  
-			mixed
+			integer
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.Version.html#140" title="Go to source code"><var>$Build</var></a>
+				<a href="source-class-NelsonMartell.Version.html#133-139" title="Go to source code"><var>$Build</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -515,10 +574,16 @@ heredar esta clase.</p>
 
 			<div class="description short">
 				
+<p>Obtiene el valor del componente de compilación del número de versión del
+objeto actual.</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>Obtiene el valor del componente de compilación del número de versión del
+objeto actual.</p>
+
 
 			</div>
 		</div></td>
@@ -526,11 +591,11 @@ heredar esta clase.</p>
 	<tr data-order="Revision" id="$Revision">
 		<td class="attributes"><code>
 			public  
-			mixed
+			integer
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.Version.html#150" title="Go to source code"><var>$Revision</var></a>
+				<a href="source-class-NelsonMartell.Version.html#144-150" title="Go to source code"><var>$Revision</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -538,10 +603,16 @@ heredar esta clase.</p>
 
 			<div class="description short">
 				
+<p>Obtiene el valor del componente de revisión del número de versión del
+objeto actual.</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>Obtiene el valor del componente de revisión del número de versión del
+objeto actual.</p>
+
 
 			</div>
 		</div></td>

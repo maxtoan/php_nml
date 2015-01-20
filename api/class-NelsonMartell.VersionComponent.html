@@ -114,8 +114,8 @@
 
 	<div class="description">
 	
-<p>Clase base de objetos, para encapsular propiedades y otros métodos
-básicos.</p>
+<p>Representa un componente de un número de Version. Extiende la clase
+IntString, pero restringe los valores que puede tomar.</p>
 
 	</div>
 
@@ -160,17 +160,7 @@ básicos.</p>
 
 				<b>Author:</b>
 				Nelson Martell (@yahoo.es: nelson6e65-dev)<br />
-				<b>Example:</b>
-				Para usar los getter y setter de los atributos como propiedades, el atributo
-debe ser privado y su nombre tipo cammel, iniciando con $_, y su propiedad para
-get/set debe iniciar en Mayúscula, sin '_'. Ejemplo: private $_nombre = '';
-//Atributo public $Nombre; //Propiedad para acceder a $_nombre Luego, las
-respectivas funciones siguiendo el formato "get_" o "set_", seguido del nombre
-de la propiedad. public function get_Nombre() { return $this-&gt;_nombre; }
-public function set_Nombre(string $value) { // Validaciones $this-&gt;_nombre =
-$value; } Además, para habilitar esta funcionalidad de propiedades, el
-constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
-		<b>Located at</b> <a href="source-class-NelsonMartell.VersionComponent.html#36-88" title="Go to source code">VersionComponent.php</a><br />
+		<b>Located at</b> <a href="source-class-NelsonMartell.VersionComponent.html#29-89" title="Go to source code">VersionComponent.php</a><br />
 	</div>
 
 
@@ -188,7 +178,7 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-NelsonMartell.VersionComponent.html#38-74" title="Go to source code">__construct</a>( <span>mixed <var>$intValue</var> = <span class="php-num">0</span></span>, <span>mixed <var>$stringValue</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-NelsonMartell.VersionComponent.html#39-75" title="Go to source code">__construct</a>( <span>mixed <var>$intValue</var> = <span class="php-num">0</span></span>, <span>mixed <var>$stringValue</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			
@@ -219,7 +209,7 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#_Parse">#</a>
-		<code><a href="source-class-NelsonMartell.VersionComponent.html#76-86" title="Go to source code">Parse</a>( <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.VersionComponent.html#77-87" title="Go to source code">Parse</a>( <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			

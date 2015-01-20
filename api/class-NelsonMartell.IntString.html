@@ -114,8 +114,8 @@
 
 	<div class="description">
 	
-<p>Clase base de objetos, para encapsular propiedades y otros métodos
-básicos.</p>
+<p>Representa un elemento mixto, compuesto por un entero y una cadena unidos (en
+ese orden). El método ToString obtiene esa cadena compuesta.</p>
 
 	</div>
 
@@ -155,17 +155,7 @@ básicos.</p>
 
 				<b>Author:</b>
 				Nelson Martell (@yahoo.es: nelson6e65-dev)<br />
-				<b>Example:</b>
-				Para usar los getter y setter de los atributos como propiedades, el atributo
-debe ser privado y su nombre tipo cammel, iniciando con $_, y su propiedad para
-get/set debe iniciar en Mayúscula, sin '_'. Ejemplo: private $_nombre = '';
-//Atributo public $Nombre; //Propiedad para acceder a $_nombre Luego, las
-respectivas funciones siguiendo el formato "get_" o "set_", seguido del nombre
-de la propiedad. public function get_Nombre() { return $this-&gt;_nombre; }
-public function set_Nombre(string $value) { // Validaciones $this-&gt;_nombre =
-$value; } Además, para habilitar esta funcionalidad de propiedades, el
-constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
-		<b>Located at</b> <a href="source-class-NelsonMartell.IntString.html#35-95" title="Go to source code">IntString.php</a><br />
+		<b>Located at</b> <a href="source-class-NelsonMartell.IntString.html#28-96" title="Go to source code">IntString.php</a><br />
 	</div>
 
 
@@ -183,7 +173,7 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-NelsonMartell.IntString.html#37-42" title="Go to source code">__construct</a>( <span>mixed <var>$intValue</var> = <span class="php-num">0</span></span>, <span>mixed <var>$stringValue</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-NelsonMartell.IntString.html#38-43" title="Go to source code">__construct</a>( <span>mixed <var>$intValue</var> = <span class="php-num">0</span></span>, <span>mixed <var>$stringValue</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			
@@ -214,7 +204,7 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#_Parse">#</a>
-		<code><a href="source-class-NelsonMartell.IntString.html#44-64" title="Go to source code">Parse</a>( <span>mixed <var>$parseableString</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.IntString.html#45-65" title="Go to source code">Parse</a>( <span>mixed <var>$parseableString</var></span> )</code>
 
 		<div class="description short">
 			
@@ -243,7 +233,7 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_IntValue">#</a>
-		<code><a href="source-class-NelsonMartell.IntString.html#71-73" title="Go to source code">get_IntValue</a>( )</code>
+		<code><a href="source-class-NelsonMartell.IntString.html#72-74" title="Go to source code">get_IntValue</a>( )</code>
 
 		<div class="description short">
 			
@@ -272,7 +262,7 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_StringValue">#</a>
-		<code><a href="source-class-NelsonMartell.IntString.html#76-78" title="Go to source code">get_StringValue</a>( )</code>
+		<code><a href="source-class-NelsonMartell.IntString.html#77-79" title="Go to source code">get_StringValue</a>( )</code>
 
 		<div class="description short">
 			
@@ -294,24 +284,32 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="attributes"><code>
 			 public 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_ToString">#</a>
-		<code><a href="source-class-NelsonMartell.IntString.html#80-82" title="Go to source code">ToString</a>( )</code>
+		<code><a href="source-class-NelsonMartell.IntString.html#81-83" title="Go to source code">ToString</a>( )</code>
 
 		<div class="description short">
 			
+<p>Convierte la instancia actual en su representación de cadena.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Convierte la instancia actual en su representación de cadena.</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
 
 
 
@@ -325,24 +323,32 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_Equals">#</a>
-		<code><a href="source-class-NelsonMartell.IntString.html#84-94" title="Go to source code">Equals</a>( <span>mixed <var>$other</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.IntString.html#85-95" title="Go to source code">Equals</a>( <span>mixed <var>$other</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Indica si el objeto especificado es igual a la instancia actual.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Indica si el objeto especificado es igual a la instancia actual.</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
 
 
 
@@ -387,7 +393,7 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.IntString.html#70" title="Go to source code"><var>$IntValue</var></a>
+				<a href="source-class-NelsonMartell.IntString.html#71" title="Go to source code"><var>$IntValue</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -410,7 +416,7 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.IntString.html#75" title="Go to source code"><var>$StringValue</var></a>
+				<a href="source-class-NelsonMartell.IntString.html#76" title="Go to source code"><var>$StringValue</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>

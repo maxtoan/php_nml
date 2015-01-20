@@ -109,6 +109,12 @@
 	<h1>Interface IList</h1>
 
 
+	<div class="description">
+	
+<p>Representa una colección de objetos a los que se puede tener acceso por un
+índice.</p>
+
+	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
@@ -131,9 +137,11 @@
 		
 		
 		<b>Namespace:</b> <a href="namespace-NelsonMartell.html">NelsonMartell</a>\<a href="namespace-NelsonMartell.Collections.html">Collections</a><br />
-		
+		<b>Package:</b> NelsonMartell\Collections<br />
 
-		<b>Located at</b> <a href="source-class-NelsonMartell.Collections.IList.html#36-64" title="Go to source code">Collections/IList.php</a><br />
+				<b>Author:</b>
+				Nelson Martell (@yahoo.es: nelson6e65-dev)<br />
+		<b>Located at</b> <a href="source-class-NelsonMartell.Collections.IList.html#29-68" title="Go to source code">Collections/IList.php</a><br />
 	</div>
 
 
@@ -144,24 +152,41 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			integer
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_IndexOf">#</a>
-		<code><a href="source-class-NelsonMartell.Collections.IList.html#46" title="Go to source code">IndexOf</a>( <span>mixed <var>$item</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Collections.IList.html#39-48" title="Go to source code">IndexOf</a>( <span>mixed <var>$item</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Determina el índice de un elemento específico de la lista. Si un objeto
+aparece varias veces en la lista, el método IndexOf siempre devolverá la
+primera instancia encontrada.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Determina el índice de un elemento específico de la lista. Si un objeto
+aparece varias veces en la lista, el método IndexOf siempre devolverá la
+primera instancia encontrada.</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$item</var></dt>
+					<dd><code>mixed</code><br>$item Objeto que se va a buscar.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>Índice de $item si se encuentra en la lista; en caso contrario, -1.<br />
+				</div>
 
 
 
@@ -180,16 +205,27 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_Insert">#</a>
-		<code><a href="source-class-NelsonMartell.Collections.IList.html#55" title="Go to source code">Insert</a>( <span>mixed <var>$index</var></span>, <span>mixed <var>$item</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Collections.IList.html#50-58" title="Go to source code">Insert</a>( <span>integer <var>$index</var></span>, <span>mixed <var>$item</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Inserta un elemento en la lista, en el índice especificado.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Inserta un elemento en la lista, en el índice especificado.</p>
 
 
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$index</var></dt>
+					<dd><code>integer</code><br>$index Índice de base cero en el que debe insertarse $item.</dd>
+					<dt><var>$item</var></dt>
+					<dd><code>mixed</code><br>$item Objeto que se va a insertar.</dd>
+				</dl></div>
 
 
 
@@ -209,16 +245,25 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_RemoveAt">#</a>
-		<code><a href="source-class-NelsonMartell.Collections.IList.html#62" title="Go to source code">RemoveAt</a>( <span>mixed <var>$index</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Collections.IList.html#60-66" title="Go to source code">RemoveAt</a>( <span>integer <var>$index</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Quita el elemento del índice especificado.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Quita el elemento del índice especificado.</p>
 
 
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$index</var></dt>
+					<dd><code>integer</code><br>$index Índice de base cero del elemento que se va a quitar.</dd>
+				</dl></div>
 
 
 

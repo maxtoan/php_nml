@@ -157,7 +157,7 @@ de la propiedad. public function get_Nombre() { return $this-&gt;_nombre; }
 public function set_Nombre(string $value) { // Validaciones $this-&gt;_nombre =
 $value; } Además, para habilitar esta funcionalidad de propiedades, el
 constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
-		<b>Located at</b> <a href="source-class-NelsonMartell.Object.html#29-157" title="Go to source code">Object.php</a><br />
+		<b>Located at</b> <a href="source-class-NelsonMartell.Object.html#29-178" title="Go to source code">Object.php</a><br />
 	</div>
 
 
@@ -204,14 +204,22 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#___get">#</a>
-		<code><a href="source-class-NelsonMartell.Object.html#70-90" title="Go to source code">__get</a>( <span>mixed <var>$name</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Object.html#65-93" title="Go to source code">__get</a>( <span>mixed <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Obtiene el valor de una propiedad. Ésta debe definir un método getter, que
+sigue este modelo: 'get_' + $name + '()'. Restringe la obtención de una
+propiedad no definida dentro de la clase si no posee su método getter.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Obtiene el valor de una propiedad. Ésta debe definir un método getter, que
+sigue este modelo: 'get_' + $name + '()'. Restringe la obtención de una
+propiedad no definida dentro de la clase si no posee su método getter.</p>
+
 
 
 
@@ -233,14 +241,22 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#___set">#</a>
-		<code><a href="source-class-NelsonMartell.Object.html#97-117" title="Go to source code">__set</a>( <span>mixed <var>$name</var></span>, <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Object.html#95-122" title="Go to source code">__set</a>( <span>mixed <var>$name</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Establece el valor de una propiedad según el modelo: 'set_' + $name + '(' +
+$value + ')' Restringe la asignación de una propiedad no definida dentro de la
+clase si no posee su método setter.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Establece el valor de una propiedad según el modelo: 'set_' + $name + '(' +
+$value + ')' Restringe la asignación de una propiedad no definida dentro de la
+clase si no posee su método setter.</p>
+
 
 
 
@@ -255,24 +271,36 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="attributes"><code>
 			final public 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___toString">#</a>
-		<code><a href="source-class-NelsonMartell.Object.html#126-130" title="Go to source code">__toString</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Object.html#127-139" title="Go to source code">__toString</a>( )</code>
 
 		<div class="description short">
 			
+<p>Convierte esta instancia en su representación de cadena. Para modificar el
+funcionamiento de esta función, debe reemplazarse la función
+ObjectClass::ToString()</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Convierte esta instancia en su representación de cadena. Para modificar el
+funcionamiento de esta función, debe reemplazarse la función
+ObjectClass::ToString()</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
 
 
 
@@ -284,24 +312,32 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="attributes"><code>
 			 public 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_ToString">#</a>
-		<code><a href="source-class-NelsonMartell.Object.html#132-141" title="Go to source code">ToString</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Object.html#141-156" title="Go to source code">ToString</a>( )</code>
 
 		<div class="description short">
 			
+<p>Convierte la instancia actual en su representación de cadena.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Convierte la instancia actual en su representación de cadena.</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
 
 
 
@@ -313,24 +349,32 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="attributes"><code>
 			final public 
-			
+			<code><a href="class-NelsonMartell.Type.html">NelsonMartell\Type</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_GetType">#</a>
-		<code><a href="source-class-NelsonMartell.Object.html#143-145" title="Go to source code">GetType</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Object.html#158-166" title="Go to source code">GetType</a>( )</code>
 
 		<div class="description short">
 			
+<p>Obtiene el tipo del objeto actual.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Obtiene el tipo del objeto actual.</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NelsonMartell.Type.html">NelsonMartell\Type</a></code></code><br />
+				</div>
 
 
 
@@ -349,7 +393,7 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#_Equals">#</a>
-		<code><a href="source-class-NelsonMartell.Object.html#147-154" title="Go to source code">Equals</a>( <span>mixed <var>$other</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Object.html#168-175" title="Go to source code">Equals</a>( <span>mixed <var>$other</var></span> )</code>
 
 		<div class="description short">
 			

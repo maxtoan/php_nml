@@ -106,8 +106,11 @@
 
 	<div class="description">
 	
-<p>Clase base de objetos, para encapsular propiedades y otros métodos
-básicos.</p>
+<p>Representa un recurso estático de una página, como elementos js y css, que
+poseen varias versiones y están organizadas en subdirectorios, proponiendo una
+estructura predeterminada. Contiene métodos y propiedades para obtener las
+rutas de los directorios y recursos de las diferentes versiones del
+framework.</p>
 
 	</div>
 
@@ -137,21 +140,11 @@ básicos.</p>
 		
 		
 		<b>Namespace:</b> <a href="namespace-NelsonMartell.html">NelsonMartell</a>\<a href="namespace-NelsonMartell.Utilities.html">Utilities</a><br />
-		<b>Package:</b> NelsonMartell<br />
+		<b>Package:</b> NelsonMartell\Utilities<br />
 
 				<b>Author:</b>
 				Nelson Martell (@yahoo.es: nelson6e65-dev)<br />
-				<b>Example:</b>
-				Para usar los getter y setter de los atributos como propiedades, el atributo
-debe ser privado y su nombre tipo cammel, iniciando con $_, y su propiedad para
-get/set debe iniciar en Mayúscula, sin '_'. Ejemplo: private $_nombre = '';
-//Atributo public $Nombre; //Propiedad para acceder a $_nombre Luego, las
-respectivas funciones siguiendo el formato "get_" o "set_", seguido del nombre
-de la propiedad. public function get_Nombre() { return $this-&gt;_nombre; }
-public function set_Nombre(string $value) { // Validaciones $this-&gt;_nombre =
-$value; } Además, para habilitar esta funcionalidad de propiedades, el
-constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
-		<b>Located at</b> <a href="source-class-NelsonMartell.Utilities.Asset.html#45-267" title="Go to source code">Utilities/Asset.php</a><br />
+		<b>Located at</b> <a href="source-class-NelsonMartell.Utilities.Asset.html#35-243" title="Go to source code">Utilities/Asset.php</a><br />
 	</div>
 
 
@@ -169,14 +162,18 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#52-108" title="Go to source code">__construct</a>( <span>mixed <var>$name</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$versions</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$cdnUri</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#46-105" title="Go to source code">__construct</a>( <span>mixed <var>$name</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$versions</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$cdnUri</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
+<p>Crea una nueva instancia de la clase Asset</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Crea una nueva instancia de la clase Asset</p>
+
 
 
 
@@ -200,7 +197,7 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_Name">#</a>
-		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#123-125" title="Go to source code">get_Name</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#121-123" title="Go to source code">get_Name</a>( )</code>
 
 		<div class="description short">
 			
@@ -229,7 +226,7 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_Name">#</a>
-		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#127-139" title="Go to source code">set_Name</a>( <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#125-137" title="Go to source code">set_Name</a>( <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			
@@ -258,7 +255,7 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_ShortName">#</a>
-		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#149-151" title="Go to source code">get_ShortName</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#148-150" title="Go to source code">get_ShortName</a>( )</code>
 
 		<div class="description short">
 			
@@ -316,7 +313,7 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_CdnUri">#</a>
-		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#186-188" title="Go to source code">get_CdnUri</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#179-181" title="Go to source code">get_CdnUri</a>( )</code>
 
 		<div class="description short">
 			
@@ -345,7 +342,7 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_CdnUri">#</a>
-		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#190-192" title="Go to source code">set_CdnUri</a>( <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#183-185" title="Go to source code">set_CdnUri</a>( <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			
@@ -374,7 +371,7 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_RootDirectory">#</a>
-		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#220-222" title="Go to source code">get_RootDirectory</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#195-197" title="Go to source code">get_RootDirectory</a>( )</code>
 
 		<div class="description short">
 			
@@ -396,24 +393,34 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="attributes"><code>
 			 public 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_GetDirectoryPath">#</a>
-		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#231-252" title="Go to source code">GetDirectoryPath</a>( <span>mixed <var>$version</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#199-227" title="Go to source code">GetDirectoryPath</a>( <span>mixed <var>$version</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
+<p>Obtiene la ruta del directorio de la versión especificada. Si no se
+especifica, se devuelve la versión más reciente.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Obtiene la ruta del directorio de la versión especificada. Si no se
+especifica, se devuelve la versión más reciente.</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Ruta del directorio de la versión especificada.<br />
+				</div>
 
 
 
@@ -425,24 +432,34 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 		<td class="attributes"><code>
 			 public 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_GetResourcePath">#</a>
-		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#261-266" title="Go to source code">GetResourcePath</a>( <span>mixed <var>$version</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$append</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-NelsonMartell.Utilities.Asset.html#230-242" title="Go to source code">GetResourcePath</a>( <span>mixed <var>$version</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$append</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			
+<p>Obtiene la ruta del recurso de la versión especificada. Si no se especifica,
+se devuelve la versión más reciente.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Obtiene la ruta del recurso de la versión especificada. Si no se especifica,
+se devuelve la versión más reciente.</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Ruta del recurso<br />
+				</div>
 
 
 
@@ -481,11 +498,11 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 	<tr data-order="Name" id="$Name">
 		<td class="attributes"><code>
 			public  
-			mixed
+			string
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.Utilities.Asset.html#120" title="Go to source code"><var>$Name</var></a>
+				<a href="source-class-NelsonMartell.Utilities.Asset.html#108-118" title="Go to source code"><var>$Name</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -493,22 +510,36 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 			<div class="description short">
 				
+<p>Obtiene o establece el nombre original del recurso. A partir de éste se
+determinará la ruta y el nombre real del archivo (que, por defecto, será éste
+mismo pero convertido en minúsculas y reemplazando sus espacios en blanco por
+guiones (' ' -&gt; '-')).</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>Obtiene o establece el nombre original del recurso. A partir de éste se
+determinará la ruta y el nombre real del archivo (que, por defecto, será éste
+mismo pero convertido en minúsculas y reemplazando sus espacios en blanco por
+guiones (' ' -&gt; '-')).</p>
 
+
+					<h4>See</h4>
+					<div class="list">
+							<code>mixed</code><br />
+					</div>
 			</div>
 		</div></td>
 	</tr>
 	<tr data-order="ShortName" id="$ShortName">
 		<td class="attributes"><code>
 			public  
-			mixed
+			string
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.Utilities.Asset.html#146" title="Go to source code"><var>$ShortName</var></a>
+				<a href="source-class-NelsonMartell.Utilities.Asset.html#139-145" title="Go to source code"><var>$ShortName</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -516,10 +547,14 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 			<div class="description short">
 				
+<p>Obtiene el nombre real del recurso, que representa al nombre real de .</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>Obtiene el nombre real del recurso, que representa al nombre real de .</p>
+
 
 			</div>
 		</div></td>
@@ -527,11 +562,11 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 	<tr data-order="Versions" id="$Versions">
 		<td class="attributes"><code>
 			public  
-			mixed
+			List
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.Utilities.Asset.html#158" title="Go to source code"><var>$Versions</var></a>
+				<a href="source-class-NelsonMartell.Utilities.Asset.html#152-158" title="Go to source code"><var>$Versions</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -539,10 +574,14 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 			<div class="description short">
 				
+<p>Obtiene la lista de versiones</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>Obtiene la lista de versiones</p>
+
 
 			</div>
 		</div></td>
@@ -550,11 +589,11 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 	<tr data-order="CdnUri" id="$CdnUri">
 		<td class="attributes"><code>
 			public  
-			mixed
+			string
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.Utilities.Asset.html#183" title="Go to source code"><var>$CdnUri</var></a>
+				<a href="source-class-NelsonMartell.Utilities.Asset.html#165-176" title="Go to source code"><var>$CdnUri</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -562,22 +601,35 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 			<div class="description short">
 				
+<p>Obtiene o establece el CDN del recurso. Debe modificarse la URL, colocando
+'{v}' en vez de la versión.</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>Obtiene o establece el CDN del recurso. Debe modificarse la URL, colocando
+'{v}' en vez de la versión.</p>
 
+
+					<h4>Example</h4>
+					<div class="list">
+							Un CDN para el JavaScript de jQuery UI v1.11.2 es:
+"<em>ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" Entonces el
+valor de esta propiedad debe ser:
+"</em>ajax.googleapis.com/ajax/libs/jqueryui/{v}/jquery-ui"<br />
+					</div>
 			</div>
 		</div></td>
 	</tr>
 	<tr data-order="RootDirectory" id="$RootDirectory">
 		<td class="attributes"><code>
 			public  
-			mixed
+			string
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.Utilities.Asset.html#219" title="Go to source code"><var>$RootDirectory</var></a>
+				<a href="source-class-NelsonMartell.Utilities.Asset.html#188-194" title="Go to source code"><var>$RootDirectory</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -585,10 +637,14 @@ constructor debe la siguiente línea: unset($this-&gt;Nombre);<br />
 
 			<div class="description short">
 				
+<p>Obtiene el directorio principal del recurso.</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>Obtiene el directorio principal del recurso.</p>
+
 
 			</div>
 		</div></td>

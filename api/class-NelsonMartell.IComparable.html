@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.8.0" />
 
-	<title>Interface NelsonMartell\IEquatable | nelson6e65/php_nml</title>
+	<title>Interface NelsonMartell\IComparable | nelson6e65/php_nml</title>
 
 	<script type="text/javascript" src="resources/combined.js?823466903"></script>
 	<script type="text/javascript" src="elementlist.js?2308527469"></script>
@@ -61,8 +61,8 @@
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-NelsonMartell.IComparable.html">IComparable</a></li>
-				<li class="active"><a href="class-NelsonMartell.IEquatable.html">IEquatable</a></li>
+				<li class="active"><a href="class-NelsonMartell.IComparable.html">IComparable</a></li>
+				<li><a href="class-NelsonMartell.IEquatable.html">IEquatable</a></li>
 			</ul>
 
 
@@ -110,7 +110,7 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Interface IEquatable</h1>
+	<h1>Interface IComparable</h1>
 
 
 	<div class="description">
@@ -126,10 +126,13 @@
 	<div>
 		<h4>Direct known implementers</h4>
 			<a href="class-NelsonMartell.IntString.html">NelsonMartell\IntString</a>, 
-			<a href="class-NelsonMartell.Version.html">NelsonMartell\Version</a>, 
-			<a href="class-NelsonMartell.VersionComponent.html">NelsonMartell\VersionComponent</a>
+			<a href="class-NelsonMartell.Version.html">NelsonMartell\Version</a>
 	</div>
 
+	<div>
+		<h4>Indirect known implementers</h4>
+			<a href="class-NelsonMartell.VersionComponent.html">NelsonMartell\VersionComponent</a>
+	</div>
 
 
 
@@ -141,42 +144,98 @@
 
 				<b>Author:</b>
 				Nelson Martell (@yahoo.es: nelson6e65-dev)<br />
-		<b>Located at</b> <a href="source-class-NelsonMartell.IEquatable.html#20-36" title="Go to source code">IEquatable.php</a><br />
+		<b>Located at</b> <a href="source-class-NelsonMartell.IComparable.html#20-47" title="Go to source code">IComparable.php</a><br />
 	</div>
 
 
 
 	<table class="summary" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="Equals" id="_Equals">
+	<tr data-order="CompareTo" id="_CompareTo">
 
 		<td class="attributes"><code>
 			 public 
-			boolean
+			integer
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_Equals">#</a>
-		<code><a href="source-class-NelsonMartell.IEquatable.html#28-34" title="Go to source code">Equals</a>( <span>mixed <var>$other</var></span> )</code>
+		<a class="anchor" href="#_CompareTo">#</a>
+		<code><a href="source-class-NelsonMartell.IComparable.html#28-35" title="Go to source code">CompareTo</a>( <span>mixed <var>$other</var></span> )</code>
 
 		<div class="description short">
 			
-<p>Indica si el objeto especificado es igual a la instancia actual.</p>
+<p>Determina la posición relativa del objeto especificado con respecto a esta
+instancia.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Indica si el objeto especificado es igual a la instancia actual.</p>
+<p>Determina la posición relativa del objeto especificado con respecto a esta
+instancia.</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$other</var></dt>
+					<dd><code>mixed</code><br>$other</dd>
+				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>boolean</code><br />
+					<code>integer</code><br>0, si es igual; &gt;0, si es mayor; &lt;0, si es menor.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Compare" id="_Compare">
+
+		<td class="attributes"><code>
+			 public static
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Compare">#</a>
+		<code><a href="source-class-NelsonMartell.IComparable.html#37-46" title="Go to source code">Compare</a>( <span>mixed <var>$left</var></span>, <span>mixed <var>$right</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Determina la posición relativa del objeto de la derecha con respecto al de
+la izquierda. Puede usarse como segundo argumento en la función de ordenamiento
+de arrays 'usort'.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determina la posición relativa del objeto de la derecha con respecto al de
+la izquierda. Puede usarse como segundo argumento en la función de ordenamiento
+de arrays 'usort'.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$left</var></dt>
+					<dd><code>mixed</code><br>$left Objeto de la izquierda</dd>
+					<dt><var>$right</var></dt>
+					<dd><code>mixed</code><br>$right Objeto de la derecha</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>0, si ambos son iguales; &gt;0, si $right es mayor a $left; &lt;0, si $left es
+mayor a $right.<br />
 				</div>
 
 

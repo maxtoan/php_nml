@@ -7,7 +7,7 @@
 	<title>Class NelsonMartell\VersionComponent | nelson6e65/php_nml</title>
 
 	<script type="text/javascript" src="resources/combined.js?823466903"></script>
-	<script type="text/javascript" src="elementlist.js?645470223"></script>
+	<script type="text/javascript" src="elementlist.js?2308527469"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 	<script type="text/javascript">
@@ -61,6 +61,7 @@
 
 			<h3>Interfaces</h3>
 			<ul>
+				<li><a href="class-NelsonMartell.IComparable.html">IComparable</a></li>
 				<li><a href="class-NelsonMartell.IEquatable.html">IEquatable</a></li>
 			</ul>
 
@@ -131,7 +132,9 @@ IntString, pero restringe los valores que puede tomar.</p>
 			<a href="class-NelsonMartell.IntString.html"><span>NelsonMartell\IntString</span></a>
 			
 			 implements 
-				<a href="class-NelsonMartell.IEquatable.html"><span>NelsonMartell\IEquatable</span></a>
+				<a href="class-NelsonMartell.IEquatable.html"><span>NelsonMartell\IEquatable</span></a>, 
+			
+				<a href="class-NelsonMartell.IComparable.html"><span>NelsonMartell\IComparable</span></a>
 			
 			
 		</dd>
@@ -160,7 +163,7 @@ IntString, pero restringe los valores que puede tomar.</p>
 
 				<b>Author:</b>
 				Nelson Martell (@yahoo.es: nelson6e65-dev)<br />
-		<b>Located at</b> <a href="source-class-NelsonMartell.VersionComponent.html#29-89" title="Go to source code">VersionComponent.php</a><br />
+		<b>Located at</b> <a href="source-class-NelsonMartell.VersionComponent.html#21-106" title="Go to source code">VersionComponent.php</a><br />
 	</div>
 
 
@@ -178,7 +181,7 @@ IntString, pero restringe los valores que puede tomar.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-NelsonMartell.VersionComponent.html#39-75" title="Go to source code">__construct</a>( <span>mixed <var>$intValue</var> = <span class="php-num">0</span></span>, <span>mixed <var>$stringValue</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-NelsonMartell.VersionComponent.html#31-67" title="Go to source code">__construct</a>( <span>mixed <var>$intValue</var> = <span class="php-num">0</span></span>, <span>mixed <var>$stringValue</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			
@@ -209,7 +212,7 @@ IntString, pero restringe los valores que puede tomar.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_Parse">#</a>
-		<code><a href="source-class-NelsonMartell.VersionComponent.html#77-87" title="Go to source code">Parse</a>( <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.VersionComponent.html#69-79" title="Go to source code">Parse</a>( <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			
@@ -229,12 +232,87 @@ IntString, pero restringe los valores que puede tomar.</p>
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="IsDefault" id="_IsDefault">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_IsDefault">#</a>
+		<code><a href="source-class-NelsonMartell.VersionComponent.html#81-95" title="Go to source code">IsDefault</a>( )</code>
+
+		<div class="description short">
+			
+<p>Determina si este componente tiene los valores predeterminados (0).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determina si este componente tiene los valores predeterminados (0).</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="IsNotDefault" id="_IsNotDefault">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_IsNotDefault">#</a>
+		<code><a href="source-class-NelsonMartell.VersionComponent.html#97-105" title="Go to source code">IsNotDefault</a>( )</code>
+
+		<div class="description short">
+			
+<p>Determina si este componente NO tiene los valores predeterminados.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determina si este componente NO tiene los valores predeterminados.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	</table>
 
 	<table class="summary inherited">
 	<caption>Methods inherited from <a href="class-NelsonMartell.IntString.html#methods">NelsonMartell\IntString</a></caption>
 	<tr>
 		<td><code>
+			<a href="class-NelsonMartell.IntString.html#_CompareTo">CompareTo()</a>, 
 			<a href="class-NelsonMartell.IntString.html#_Equals">Equals()</a>, 
 			<a href="class-NelsonMartell.IntString.html#_ToString">ToString()</a>, 
 			<a href="class-NelsonMartell.IntString.html#_get_IntValue">get_IntValue()</a>, 
@@ -246,6 +324,7 @@ IntString, pero restringe los valores que puede tomar.</p>
 	<caption>Methods inherited from <a href="class-NelsonMartell.Object.html#methods">NelsonMartell\Object</a></caption>
 	<tr>
 		<td><code>
+			<a href="class-NelsonMartell.Object.html#_Compare">Compare()</a>, 
 			<a href="class-NelsonMartell.Object.html#_GetType">GetType()</a>, 
 			<a href="class-NelsonMartell.Object.html#___get">__get()</a>, 
 			<a href="class-NelsonMartell.Object.html#___set">__set()</a>, 

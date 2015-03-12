@@ -10,6 +10,9 @@
 	<loc>http://nelson6e65.github.io/php_nml/namespace-NelsonMartell.Collections.html</loc>
 </url>
 <url>
+	<loc>http://nelson6e65.github.io/php_nml/namespace-NelsonMartell.Extensions.html</loc>
+</url>
+<url>
 	<loc>http://nelson6e65.github.io/php_nml/namespace-NelsonMartell.Utilities.html</loc>
 </url>
 <url>
@@ -21,10 +24,10 @@
 
 
 <url>
-	<loc>http://nelson6e65.github.io/php_nml/class-DirectoryInfo.html</loc>
+	<loc>http://nelson6e65.github.io/php_nml/class-NelsonMartell.Collections.Collection.html</loc>
 </url>
 <url>
-	<loc>http://nelson6e65.github.io/php_nml/class-NelsonMartell.Collections.Objects.html</loc>
+	<loc>http://nelson6e65.github.io/php_nml/class-NelsonMartell.Extensions.String.html</loc>
 </url>
 <url>
 	<loc>http://nelson6e65.github.io/php_nml/class-NelsonMartell.IntString.html</loc>
@@ -58,6 +61,15 @@
 </url>
 <url>
 	<loc>http://nelson6e65.github.io/php_nml/class-NelsonMartell.IEquatable.html</loc>
+</url>
+<url>
+	<loc>http://nelson6e65.github.io/php_nml/class-NelsonMartell.Collections.CollectionIterator.html</loc>
+</url>
+<url>
+	<loc>http://nelson6e65.github.io/php_nml/function-nml_msg.html</loc>
+</url>
+<url>
+	<loc>http://nelson6e65.github.io/php_nml/function-nml_nmsg.html</loc>
 </url>
 <url>
 	<loc>http://nelson6e65.github.io/php_nml/function-typeof.html</loc>

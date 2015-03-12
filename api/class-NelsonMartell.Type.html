@@ -7,7 +7,7 @@
 	<title>Class NelsonMartell\Type | nelson6e65/php_nml</title>
 
 	<script type="text/javascript" src="resources/combined.js?823466903"></script>
-	<script type="text/javascript" src="elementlist.js?2308527469"></script>
+	<script type="text/javascript" src="elementlist.js?2589366709"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 	<script type="text/javascript">
@@ -35,6 +35,8 @@
 				<li class="active"><a href="namespace-NelsonMartell.html">NelsonMartell<span></span></a>
 						<ul>
 				<li><a href="namespace-NelsonMartell.Collections.html">Collections</a>
+						</li>
+				<li><a href="namespace-NelsonMartell.Extensions.html">Extensions</a>
 						</li>
 				<li><a href="namespace-NelsonMartell.Utilities.html">Utilities<span></span></a>
 						<ul>
@@ -115,8 +117,8 @@
 
 	<div class="description">
 	
-<p>Representa al tipo de un objeto PHP. Posee propiedades y métodos que
-describen a un tipo.</p>
+<p>Represents a PHP object type, and provides some properties and methods to
+describe some info about itself.</p>
 
 	</div>
 
@@ -146,11 +148,12 @@ describen a un tipo.</p>
 		<b>Final</b><br />
 		
 		<b>Namespace:</b> <a href="namespace-NelsonMartell.html">NelsonMartell</a><br />
-		<b>Package:</b> NelsonMartell<br />
+		
 
 				<b>Author:</b>
-				Nelson Martell (@yahoo.es: nelson6e65-dev)<br />
-		<b>Located at</b> <a href="source-class-NelsonMartell.Type.html#20-220" title="Go to source code">Type.php</a><br />
+				Nelson Martell (<a
+href="mailto:nelson6e65-dev&#64;yahoo.es">nelson6e65-dev&#64;<!-- -->yahoo.es</a>)<br />
+		<b>Located at</b> <a href="source-class-NelsonMartell.Type.html#26-298" title="Go to source code">Type.php</a><br />
 	</div>
 
 
@@ -168,24 +171,24 @@ describen a un tipo.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-NelsonMartell.Type.html#30-59" title="Go to source code">__construct</a>( <span>mixed <var>$obj</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Type.html#34-77" title="Go to source code">__construct</a>( <span>mixed <var>$obj</var></span> )</code>
 
 		<div class="description short">
 			
-<p>Obtiene el Type del objeto especificado.</p>
+<p>Gets the type of specified $obj and collect some info about itself.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Obtiene el Type del objeto especificado.</p>
+<p>Gets the type of specified $obj and collect some info about itself.</p>
 
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$obj</var></dt>
-					<dd><code>mixed</code><br>$obj Objeto al cual se le extraerá su tipo.</dd>
+					<dd><code>mixed</code><br>$obj Target object.</dd>
 				</dl></div>
 
 
@@ -201,24 +204,32 @@ describen a un tipo.</p>
 
 		<td class="attributes"><code>
 			 public 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_Name">#</a>
-		<code><a href="source-class-NelsonMartell.Type.html#70-72" title="Go to source code">get_Name</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Type.html#90-97" title="Go to source code">get_Name</a>( )</code>
 
 		<div class="description short">
 			
+<p>Getter for Type::Name property.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Getter for Type::Name property.</p>
 
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
 
 
 
@@ -226,30 +237,83 @@ describen a un tipo.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="GetName" id="_GetName">
+	<tr data-order="get_ShortName" id="_get_ShortName">
 
 		<td class="attributes"><code>
 			 public 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_GetName">#</a>
-		<code><a href="source-class-NelsonMartell.Type.html#74-77" title="Go to source code">GetName</a>( )</code>
+		<a class="anchor" href="#_get_ShortName">#</a>
+		<code><a href="source-class-NelsonMartell.Type.html#108-116" title="Go to source code">get_ShortName</a>( )</code>
 
 		<div class="description short">
 			
+<p>Getter for Type::ShortName property.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Getter for Type::ShortName property.</p>
 
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
 
+
+				<h4>See</h4>
+				<div class="list">
+						<code><code><a href="class-NelsonMartell.Type.html#$ShortName">NelsonMartell\Type::<var>$ShortName</var></a></code></code><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_Namespace" id="_get_Namespace">
+
+		<td class="attributes"><code>
+			 public 
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_Namespace">#</a>
+		<code><a href="source-class-NelsonMartell.Type.html#128-136" title="Go to source code">get_Namespace</a>( )</code>
+
+		<div class="description short">
+			
+<p>Getter for Type::Namespace property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Getter for Type::Namespace property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string|null</code><br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						<code><code><a href="class-NelsonMartell.Type.html#$Namespace">NelsonMartell\Type::<var>$Namespace</var></a></code></code><br />
+				</div>
 
 
 		</div>
@@ -266,36 +330,7 @@ describen a un tipo.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_Vars">#</a>
-		<code><a href="source-class-NelsonMartell.Type.html#88-90" title="Go to source code">get_Vars</a>( )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="GetVars" id="_GetVars">
-
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_GetVars">#</a>
-		<code><a href="source-class-NelsonMartell.Type.html#92-95" title="Go to source code">GetVars</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Type.html#147-152" title="Go to source code">get_Vars</a>( )</code>
 
 		<div class="description short">
 			
@@ -324,36 +359,7 @@ describen a un tipo.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_Methods">#</a>
-		<code><a href="source-class-NelsonMartell.Type.html#106-108" title="Go to source code">get_Methods</a>( )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="GetMethods" id="_GetMethods">
-
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_GetMethods">#</a>
-		<code><a href="source-class-NelsonMartell.Type.html#110-113" title="Go to source code">GetMethods</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Type.html#163-168" title="Go to source code">get_Methods</a>( )</code>
 
 		<div class="description short">
 			
@@ -382,7 +388,7 @@ describen a un tipo.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_IsNull">#</a>
-		<code><a href="source-class-NelsonMartell.Type.html#115-127" title="Go to source code">IsNull</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Type.html#170-182" title="Go to source code">IsNull</a>( )</code>
 
 		<div class="description short">
 			
@@ -419,7 +425,7 @@ describen a un tipo.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_IsNotNull">#</a>
-		<code><a href="source-class-NelsonMartell.Type.html#129-137" title="Go to source code">IsNotNull</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Type.html#184-192" title="Go to source code">IsNotNull</a>( )</code>
 
 		<div class="description short">
 			
@@ -456,7 +462,7 @@ describen a un tipo.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_IsCustom">#</a>
-		<code><a href="source-class-NelsonMartell.Type.html#140-162" title="Go to source code">IsCustom</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Type.html#195-214" title="Go to source code">IsCustom</a>( )</code>
 
 		<div class="description short">
 			
@@ -482,6 +488,47 @@ describen a un tipo.</p>
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="IsScalar" id="_IsScalar">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_IsScalar">#</a>
+		<code><a href="source-class-NelsonMartell.Type.html#216-238" title="Go to source code">IsScalar</a>( )</code>
+
+		<div class="description short">
+			
+<p>Determinate if this type is scalar.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determinate if this type is scalar.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						is_scalar()<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="IsValueType" id="_IsValueType">
 
 		<td class="attributes"><code>
@@ -493,7 +540,7 @@ describen a un tipo.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_IsValueType">#</a>
-		<code><a href="source-class-NelsonMartell.Type.html#164-181" title="Go to source code">IsValueType</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Type.html#240-258" title="Go to source code">IsValueType</a>( )</code>
 
 		<div class="description short">
 			
@@ -506,6 +553,10 @@ describen a un tipo.</p>
 <p>Determina si este Type es de tipo valor.</p>
 
 
+				<h4>Deprecated</h4>
+				<div class="list">
+						Use more precise method: Type::IsScalar, which excludes <code>array</code>.<br />
+				</div>
 
 
 				<h4>Returns</h4>
@@ -530,7 +581,7 @@ describen a un tipo.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_IsReferenceType">#</a>
-		<code><a href="source-class-NelsonMartell.Type.html#183-191" title="Go to source code">IsReferenceType</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Type.html#260-268" title="Go to source code">IsReferenceType</a>( )</code>
 
 		<div class="description short">
 			
@@ -567,7 +618,7 @@ describen a un tipo.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_ToString">#</a>
-		<code><a href="source-class-NelsonMartell.Type.html#193-207" title="Go to source code">ToString</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Type.html#270-284" title="Go to source code">ToString</a>( )</code>
 
 		<div class="description short">
 			
@@ -606,7 +657,7 @@ describen a un tipo.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_typeof">#</a>
-		<code><a href="source-class-NelsonMartell.Type.html#209-218" title="Go to source code">typeof</a>( <span>mixed <var>$obj</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Type.html#286-296" title="Go to source code">typeof</a>( <span>mixed <var>$obj</var></span> )</code>
 
 		<div class="description short">
 			
@@ -621,6 +672,9 @@ Type.</p>
 Type.</p>
 
 
+				<h4>Deprecated</h4>
+				<div class="list">
+				</div>
 
 
 				<h4>Returns</h4>
@@ -669,7 +723,7 @@ Type.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.Type.html#61-68" title="Go to source code"><var>$Name</var></a>
+				<a href="source-class-NelsonMartell.Type.html#81-87" title="Go to source code"><var>$Name</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -677,13 +731,71 @@ Type.</p>
 
 			<div class="description short">
 				
-<p>Gets the name of this Type. This property is readonly.</p>
+<p>Gets the name of this Type. This property is read-only.</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>Gets the name of this Type. This property is readonly.</p>
+<p>Gets the name of this Type. This property is read-only.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="ShortName" id="$ShortName">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NelsonMartell.Type.html#99-105" title="Go to source code"><var>$ShortName</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$ShortName" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Gets the abbreviated name of class, in other words, without the namespace.
+This property is read-only.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Gets the abbreviated name of class, in other words, without the namespace.
+This property is read-only.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="Namespace" id="$Namespace">
+		<td class="attributes"><code>
+			public  
+			string|null
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NelsonMartell.Type.html#118-125" title="Go to source code"><var>$Namespace</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$Namespace" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Gets the namespace name of this class. If this Type is not a class, this
+property is set to <code>NULL</code>. This property is read-only.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Gets the namespace name of this class. If this Type is not a class, this
+property is set to <code>NULL</code>. This property is read-only.</p>
 
 
 			</div>
@@ -696,7 +808,7 @@ Type.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.Type.html#79-86" title="Go to source code"><var>$Vars</var></a>
+				<a href="source-class-NelsonMartell.Type.html#138-145" title="Go to source code"><var>$Vars</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -704,13 +816,15 @@ Type.</p>
 
 			<div class="description short">
 				
-<p>Gets the vars list of this Type. This property is readonly.</p>
+<p>Gets the public|protected properties (ReflectionProperty) of this Type. This
+property is read-only.</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>Gets the vars list of this Type. This property is readonly.</p>
+<p>Gets the public|protected properties (ReflectionProperty) of this Type. This
+property is read-only.</p>
 
 
 			</div>
@@ -723,7 +837,7 @@ Type.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.Type.html#97-104" title="Go to source code"><var>$Methods</var></a>
+				<a href="source-class-NelsonMartell.Type.html#154-161" title="Go to source code"><var>$Methods</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -731,13 +845,15 @@ Type.</p>
 
 			<div class="description short">
 				
-<p>Gets the methods list of this Type. This property is readonly.</p>
+<p>Gets the public|protected methods (ReflectionMethod) of this Type. This
+property is read-only.</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>Gets the methods list of this Type. This property is readonly.</p>
+<p>Gets the public|protected methods (ReflectionMethod) of this Type. This
+property is read-only.</p>
 
 
 			</div>

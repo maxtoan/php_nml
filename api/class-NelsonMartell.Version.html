@@ -7,7 +7,7 @@
 	<title>Class NelsonMartell\Version | nelson6e65/php_nml</title>
 
 	<script type="text/javascript" src="resources/combined.js?823466903"></script>
-	<script type="text/javascript" src="elementlist.js?2308527469"></script>
+	<script type="text/javascript" src="elementlist.js?2589366709"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 	<script type="text/javascript">
@@ -35,6 +35,8 @@
 				<li class="active"><a href="namespace-NelsonMartell.html">NelsonMartell<span></span></a>
 						<ul>
 				<li><a href="namespace-NelsonMartell.Collections.html">Collections</a>
+						</li>
+				<li><a href="namespace-NelsonMartell.Extensions.html">Extensions</a>
 						</li>
 				<li><a href="namespace-NelsonMartell.Utilities.html">Utilities<span></span></a>
 						<ul>
@@ -151,11 +153,12 @@ heredar esta clase.</p>
 		<b>Final</b><br />
 		
 		<b>Namespace:</b> <a href="namespace-NelsonMartell.html">NelsonMartell</a><br />
-		<b>Package:</b> NelsonMartell<br />
+		
 
 				<b>Author:</b>
-				Nelson Martell (@yahoo.es: nelson6e65-dev)<br />
-		<b>Located at</b> <a href="source-class-NelsonMartell.Version.html#21-281" title="Go to source code">Version.php</a><br />
+				Nelson Martell (<a
+href="mailto:nelson6e65-dev&#64;yahoo.es">nelson6e65-dev&#64;<!-- -->yahoo.es</a>)<br />
+		<b>Located at</b> <a href="source-class-NelsonMartell.Version.html#23-295" title="Go to source code">Version.php</a><br />
 	</div>
 
 
@@ -173,7 +176,7 @@ heredar esta clase.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-NelsonMartell.Version.html#32-68" title="Go to source code">__construct</a>( <span>integer <var>$major</var> = <span class="php-num">0</span></span>, <span>integer <var>$minor</var> = <span class="php-num">0</span></span>, <span>integer|string|<code><a href="class-NelsonMartell.VersionComponent.html">NelsonMartell\VersionComponent</a></code> <var>$build</var> = <span class="php-num">0</span></span>, <span>integer|string|<code><a href="class-NelsonMartell.VersionComponent.html">NelsonMartell\VersionComponent</a></code> <var>$revision</var> = <span class="php-num">0</span></span> )</code>
+		<code><a href="source-class-NelsonMartell.Version.html#33-69" title="Go to source code">__construct</a>( <span>integer <var>$major</var></span>, <span>integer <var>$minor</var></span>, <span>integer|string|<code><a href="class-NelsonMartell.VersionComponent.html">NelsonMartell\VersionComponent</a></code>|null <var>$build</var> = <span class="php-keyword1">null</span></span>, <span>integer|string|<code><a href="class-NelsonMartell.VersionComponent.html">NelsonMartell\VersionComponent</a></code>|null <var>$revision</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
@@ -198,9 +201,9 @@ válida, usar el método IsValid.</p>
 					<dt><var>$minor</var></dt>
 					<dd><code>integer</code><br>$minor Componente secundario</dd>
 					<dt><var>$build</var></dt>
-					<dd><code>integer|string|<code><a href="class-NelsonMartell.VersionComponent.html">NelsonMartell\VersionComponent</a></code></code><br>$build Componente de compilación</dd>
+					<dd><code>integer|string|<code><a href="class-NelsonMartell.VersionComponent.html">NelsonMartell\VersionComponent</a></code>|null</code><br>$build Componente de compilación</dd>
 					<dt><var>$revision</var></dt>
-					<dd><code>integer|string|<code><a href="class-NelsonMartell.VersionComponent.html">NelsonMartell\VersionComponent</a></code></code><br>$revision Componente de revisión</dd>
+					<dd><code>integer|string|<code><a href="class-NelsonMartell.VersionComponent.html">NelsonMartell\VersionComponent</a></code>|null</code><br>$revision Componente de revisión</dd>
 				</dl></div>
 
 
@@ -227,17 +230,17 @@ válida, usar el método IsValid.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_Parse">#</a>
-		<code><a href="source-class-NelsonMartell.Version.html#70-110" title="Go to source code">Parse</a>( <span>string <var>$value</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Version.html#71-111" title="Go to source code">Parse</a>( <span>string <var>$value</var></span> )</code>
 
 		<div class="description short">
 			
-<p>Convierte una cadena a su representación del tipo Version</p>
+<p>Convierte una cadena a su representación del tipo Version.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Convierte una cadena a su representación del tipo Version</p>
+<p>Convierte una cadena a su representación del tipo Version.</p>
 
 
 
@@ -269,7 +272,7 @@ válida, usar el método IsValid.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_Major">#</a>
-		<code><a href="source-class-NelsonMartell.Version.html#122" title="Go to source code">get_Major</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Version.html#123" title="Go to source code">get_Major</a>( )</code>
 
 		<div class="description short">
 			
@@ -298,7 +301,7 @@ válida, usar el método IsValid.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_Minor">#</a>
-		<code><a href="source-class-NelsonMartell.Version.html#135" title="Go to source code">get_Minor</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Version.html#136" title="Go to source code">get_Minor</a>( )</code>
 
 		<div class="description short">
 			
@@ -327,7 +330,7 @@ válida, usar el método IsValid.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_Build">#</a>
-		<code><a href="source-class-NelsonMartell.Version.html#147" title="Go to source code">get_Build</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Version.html#148" title="Go to source code">get_Build</a>( )</code>
 
 		<div class="description short">
 			
@@ -356,7 +359,7 @@ válida, usar el método IsValid.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_Revision">#</a>
-		<code><a href="source-class-NelsonMartell.Version.html#159" title="Go to source code">get_Revision</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Version.html#160" title="Go to source code">get_Revision</a>( )</code>
 
 		<div class="description short">
 			
@@ -385,14 +388,14 @@ válida, usar el método IsValid.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_ToString">#</a>
-		<code><a href="source-class-NelsonMartell.Version.html#162-191" title="Go to source code">ToString</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Version.html#163-189" title="Go to source code">ToString</a>( )</code>
 
 		<div class="description short">
 			
 <p>Convierte la instancia actual en su representación en cadena. Por defecto,
 si no están definidos los componentes de compilación y revisión, no se
-incluyen en la salida. Use el método IsValid para determinar si la versión es
-válida antes de devolver esta cadena.</p>
+incluyen en la salida. Use el método IsValid si quiere determinar si la
+versión es válida antes de devolver esta cadena.</p>
 
 		</div>
 
@@ -400,8 +403,8 @@ válida antes de devolver esta cadena.</p>
 			
 <p>Convierte la instancia actual en su representación en cadena. Por defecto,
 si no están definidos los componentes de compilación y revisión, no se
-incluyen en la salida. Use el método IsValid para determinar si la versión es
-válida antes de devolver esta cadena.</p>
+incluyen en la salida. Use el método IsValid si quiere determinar si la
+versión es válida antes de devolver esta cadena.</p>
 
 
 
@@ -415,6 +418,7 @@ válida antes de devolver esta cadena.</p>
 
 				<h4>See</h4>
 				<div class="list">
+						<code><code><a href="class-NelsonMartell.VersionComponent.html#_IsNull">NelsonMartell\VersionComponent::IsNull()</a></code></code><br />
 						<code><code><a href="class-NelsonMartell.Version.html#_IsValid">NelsonMartell\Version::IsValid()</a></code></code><br />
 				</div>
 
@@ -435,19 +439,36 @@ válida antes de devolver esta cadena.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_IsValid">#</a>
-		<code><a href="source-class-NelsonMartell.Version.html#193-224" title="Go to source code">IsValid</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Version.html#191-238" title="Go to source code">IsValid</a>( )</code>
 
 		<div class="description short">
 			
-<p>Indica si la instancia actual es un número de versión válido. Al menos los
-componentes Major y Minor de la versión deben estar establecidos.</p>
+<p>Indica si la instancia actual es un número de versión válido.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Indica si la instancia actual es un número de versión válido. Al menos los
-componentes Major y Minor de la versión deben estar establecidos.</p>
+<p>Indica si la instancia actual es un número de versión válido.</p>
+
+<p>Se considera válido si:</p>
+
+<ol>
+	<li>Major o Minor es mayor a cero (0). No puede ser '0.0'.</li>
+
+	<li>Build y Revision son nulos (no están definidos).</li>
+
+	<li>Build está definido pero Revision no.</li>
+
+	<li>Ambos están definidos, pero no poseen la parte de la cadena.</li>
+
+	<li>Ambos están definidos, pero Build no posee la parte de cadena.</li>
+
+	<li>Build está definido y tiene la cadena, pero Revision no está
+	definido.</li>
+
+	<li>Revision posee cadena, pero Build no.</li>
+</ol>
 
 
 
@@ -474,7 +495,7 @@ componentes Major y Minor de la versión deben estar establecidos.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_Equals">#</a>
-		<code><a href="source-class-NelsonMartell.Version.html#226-244" title="Go to source code">Equals</a>( <span>mixed <var>$other</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Version.html#240-258" title="Go to source code">Equals</a>( <span>mixed <var>$other</var></span> )</code>
 
 		<div class="description short">
 			
@@ -517,7 +538,7 @@ actual.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_CompareTo">#</a>
-		<code><a href="source-class-NelsonMartell.Version.html#249-277" title="Go to source code">CompareTo</a>( <span><code><a href="class-NelsonMartell.Version.html">NelsonMartell\Version</a></code> <var>$other</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Version.html#263-291" title="Go to source code">CompareTo</a>( <span><code><a href="class-NelsonMartell.Version.html">NelsonMartell\Version</a></code> <var>$other</var></span> )</code>
 
 		<div class="description short">
 			
@@ -586,7 +607,7 @@ instancia.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.Version.html#112-119" title="Go to source code"><var>$Major</var></a>
+				<a href="source-class-NelsonMartell.Version.html#113-120" title="Go to source code"><var>$Major</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -615,7 +636,7 @@ actual. Ésta propiedad es de sólo lectura.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.Version.html#125-132" title="Go to source code"><var>$Minor</var></a>
+				<a href="source-class-NelsonMartell.Version.html#126-133" title="Go to source code"><var>$Minor</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -644,7 +665,7 @@ actual. Ésta propiedad es de sólo lectura.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.Version.html#137-144" title="Go to source code"><var>$Build</var></a>
+				<a href="source-class-NelsonMartell.Version.html#138-145" title="Go to source code"><var>$Build</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -673,7 +694,7 @@ objeto actual. Ésta propiedad es de sólo lectura.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-NelsonMartell.Version.html#149-156" title="Go to source code"><var>$Revision</var></a>
+				<a href="source-class-NelsonMartell.Version.html#150-157" title="Go to source code"><var>$Revision</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>

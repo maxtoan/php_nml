@@ -7,7 +7,7 @@
 	<title>Interface NelsonMartell\Collections\ICollection | nelson6e65/php_nml</title>
 
 	<script type="text/javascript" src="resources/combined.js?823466903"></script>
-	<script type="text/javascript" src="elementlist.js?2308527469"></script>
+	<script type="text/javascript" src="elementlist.js?2589366709"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 	<script type="text/javascript">
@@ -36,6 +36,8 @@
 						<ul>
 				<li class="active"><a href="namespace-NelsonMartell.Collections.html">Collections</a>
 						</li>
+				<li><a href="namespace-NelsonMartell.Extensions.html">Extensions</a>
+						</li>
 				<li><a href="namespace-NelsonMartell.Utilities.html">Utilities<span></span></a>
 						<ul>
 				<li><a href="namespace-NelsonMartell.Utilities.UnitTesting.html">UnitTesting</a>
@@ -52,7 +54,7 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-NelsonMartell.Collections.Objects.html">Objects</a></li>
+				<li><a href="class-NelsonMartell.Collections.Collection.html">Collection</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
@@ -61,6 +63,10 @@
 				<li><a href="class-NelsonMartell.Collections.IList.html">IList</a></li>
 			</ul>
 
+			<h3>Traits</h3>
+			<ul>
+				<li><a href="class-NelsonMartell.Collections.CollectionIterator.html">CollectionIterator</a></li>
+			</ul>
 
 
 
@@ -111,16 +117,26 @@
 
 	<div class="description">
 	
-<p>Define métodos para manipular colecciones.</p>
+<p>Define métodos para manipular colecciones de objetos.</p>
 
 	</div>
 
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>NelsonMartell\Collections\ICollection</span></b>			
+			 implements 
+<span>Iterator</span>
+			
+			
+		</dd>
+	</dl>
 
 
 
 
 	<div>
 		<h4>Direct known implementers</h4>
+			<a href="class-NelsonMartell.Collections.Collection.html">NelsonMartell\Collections\Collection</a>, 
 			<a href="class-NelsonMartell.Collections.IList.html">NelsonMartell\Collections\IList</a>
 	</div>
 
@@ -131,11 +147,12 @@
 		
 		
 		<b>Namespace:</b> <a href="namespace-NelsonMartell.html">NelsonMartell</a>\<a href="namespace-NelsonMartell.Collections.html">Collections</a><br />
-		<b>Package:</b> NelsonMartell\Collections<br />
+		
 
 				<b>Author:</b>
-				Nelson Martell (@yahoo.es: nelson6e65-dev)<br />
-		<b>Located at</b> <a href="source-class-NelsonMartell.Collections.ICollection.html#27-86" title="Go to source code">Collections/ICollection.php</a><br />
+				Nelson Martell (<a
+href="mailto:nelson6e65-dev&#64;yahoo.es">nelson6e65-dev&#64;<!-- -->yahoo.es</a>)<br />
+		<b>Located at</b> <a href="source-class-NelsonMartell.Collections.ICollection.html#23-80" title="Go to source code">Collections/ICollection.php</a><br />
 	</div>
 
 
@@ -153,7 +170,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_Count">#</a>
-		<code><a href="source-class-NelsonMartell.Collections.ICollection.html#37-45" title="Go to source code">get_Count</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Collections.ICollection.html#31-39" title="Go to source code">get_Count</a>( )</code>
 
 		<div class="description short">
 			
@@ -196,7 +213,7 @@ clase NelsonMartell.Object, debe definirse la propiedad 'public $Count'.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_Add">#</a>
-		<code><a href="source-class-NelsonMartell.Collections.ICollection.html#47-54" title="Go to source code">Add</a>( <span>mixed <var>$item</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Collections.ICollection.html#41-48" title="Go to source code">Add</a>( <span>mixed <var>$item</var></span> )</code>
 
 		<div class="description short">
 			
@@ -234,7 +251,7 @@ clase NelsonMartell.Object, debe definirse la propiedad 'public $Count'.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_Clear">#</a>
-		<code><a href="source-class-NelsonMartell.Collections.ICollection.html#56-65" title="Go to source code">Clear</a>( )</code>
+		<code><a href="source-class-NelsonMartell.Collections.ICollection.html#50-59" title="Go to source code">Clear</a>( )</code>
 
 		<div class="description short">
 			
@@ -270,7 +287,7 @@ a otros objetos desde los elementos de la colección.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_Contains">#</a>
-		<code><a href="source-class-NelsonMartell.Collections.ICollection.html#67-74" title="Go to source code">Contains</a>( <span>mixed <var>$item</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Collections.ICollection.html#61-68" title="Go to source code">Contains</a>( <span>mixed <var>$item</var></span> )</code>
 
 		<div class="description short">
 			
@@ -312,7 +329,7 @@ a otros objetos desde los elementos de la colección.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_Remove">#</a>
-		<code><a href="source-class-NelsonMartell.Collections.ICollection.html#76-84" title="Go to source code">Remove</a>( <span>mixed <var>$item</var></span> )</code>
+		<code><a href="source-class-NelsonMartell.Collections.ICollection.html#70-78" title="Go to source code">Remove</a>( <span>mixed <var>$item</var></span> )</code>
 
 		<div class="description short">
 			
@@ -346,6 +363,18 @@ método también devuelve false si no se encontró $item.<br />
 	</tr>
 	</table>
 
+	<table class="summary inherited">
+	<caption>Methods inherited from Iterator</caption>
+	<tr>
+		<td><code>
+current(), 
+key(), 
+next(), 
+rewind(), 
+valid()
+		</code></td>
+	</tr>
+	</table>
 
 
 

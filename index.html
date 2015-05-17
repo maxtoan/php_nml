@@ -9,16 +9,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>PHP: Nelson Martell Library</title>
-    <script type="text/javascript">
-      window.liveSettings = {
-        api_key: "401c6dda28a343c4b410940a1b376ed2",
-        picker: "bottom-right",
-        detectlang: true,
-        dynamic: true,
-        autocollect: true
-      };
-    </script>
-    <script type="text/javascript" src="//cdn.transifex.com/live.js"></script>
   </head>
 
   <body>
@@ -44,18 +34,23 @@
         <p><a href="http://nelson6e65.github.io/php_nml/api"><img src="http://apigenerator.org/badge.png" alt="API Docs"></a></p>
 
 <h1>
-<a id="php-nelson-martell-library" class="anchor" href="#php-nelson-martell-library" aria-hidden="true"><span class="octicon octicon-link"></span></a>PHP: Nelson Martell Library</h1>
+<a id="php-nelson-martell-library" class="anchor" href="#php-nelson-martell-library" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://nelson6e65.github.io/php_nml">PHP: Nelson Martell Library</a>
+</h1>
 
 <h2>
 <a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h2>
 
-<p>PHP library for PHP5+ applications. </p>
+<p>Provides a set of classes for PHP applications.</p>
+
+<p><strong>Note</strong>: This is an unstable repository in development and should be treated as an <strong><em>alpha</em></strong>.</p>
 
 <h2>
 <a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
 <ul>
 <li>PHP 5.5 or greater</li>
+<li>
+<a href="https://github.com/cakephp/utility">CakePHP Utility Classes</a> (temporal; only used <code>Cake\Utility\Text</code> class) - Added as submodule.</li>
 </ul>
 
 <h2>
@@ -64,45 +59,72 @@
 <h3>
 <a id="as-git-submodule" class="anchor" href="#as-git-submodule" aria-hidden="true"><span class="octicon octicon-link"></span></a>As Git submodule</h3>
 
-<p>In your app directory, type:</p>
+<p>In your <strong><em>vendor</em></strong> directory, type:</p>
 
-<pre><code>git submodule add https://github.com/nelson6e65/php_nml.git Vendor/NML
+<pre><code>git submodule add https://github.com/nelson6e65/php_nml.git
 git submodule init
 git submodule update
 </code></pre>
 
-<p>This installs NML into your Vendor directory.</p>
+<p>Or you can also clone using ssh auth:</p>
+
+<pre><code>git submodule add git@github.com:nelson6e65/php_nml.git
+git submodule init
+git submodule update
+</code></pre>
+
+<p>This installs NML into your Vendor directory as <code>php_nml</code>.</p>
 
 <h3>
 <a id="manually" class="anchor" href="#manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Manually</h3>
 
 <ul>
-<li>Download any NML <a href="https://github.com/nelson6e65/php_nml/releases">Release</a> or <a href="https://github.com/nelson6e65/php_nml/archive/master.zip">Master development</a>.</li>
+<li>Download NML from  <a href="https://github.com/nelson6e65/php_nml/releases">releases</a>,  master-<a href="https://github.com/nelson6e65/php_nml/tarball/master">tar.gz</a> or master-<a href="https://github.com/nelson6e65/php_nml/zipball/master">zip</a>.</li>
 <li>Unzip that download.</li>
-<li>Rename the resulting folder to NML</li>
+<li>Rename the resulting folder to <code>php_nml</code>.</li>
 <li>Then copy/move this folder into your vendor directory</li>
 </ul>
+
+<p><strong>Note:</strong> You will need to get the <a href="https://github.com/cakephp/utility">CakePHP Utility Classes</a> (if you do not use that package already) and place it into <code>php_nml/vendor/Cake/Utility</code> directory. There is an <code>php_nml/vendor/autoload.php</code> witch loads dependencies from that path using psr-4 structure.</p>
 
 <h2>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<p>For availability of classes, on non-composer install, first you should import 'autoload.php' in order to autoload classes.</p>
+<p>This library implements an auto-load system even for non-composer installs.</p>
 
-<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-k">require_once</span>(<span class="pl-s1"><span class="pl-pds">'</span>path/to/your/app/Vendor/NML/autoload.php<span class="pl-pds">'</span></span>);</span></pre></div>
+<p>First you should import <code>autoload.php</code> file from <code>php_nml</code> root directory into your app configuration file:</p>
 
-<p>Or you can include file by file.</p>
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
+<span class="pl-s1">    <span class="pl-c">//app/config.php</span></span>
+<span class="pl-s1">    <span class="pl-c">//Other configs of your application...</span></span>
+<span class="pl-s1">    <span class="pl-k">require_once</span>(<span class="pl-s"><span class="pl-pds">'</span>path/to/your/app/Vendor/php_nml/autoload.php<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s1">    <span class="pl-c">//...</span></span></pre></div>
 
-<p>Then, you can use classes from this library, using namespace:</p>
+<p>Then, the library classes will be available to use:</p>
 
-<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-c">//Example of use of Version class:</span></span>
-<span class="pl-s2"><span class="pl-k">use</span> <span class="pl-s3">NelsonMartell\Version</span>;</span>
-<span class="pl-s2"></span>
-<span class="pl-s2"><span class="pl-vo">$nmlVersion</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-s3">Version</span>(<span class="pl-c1">0</span>, <span class="pl-c1">3</span>);</span>
-<span class="pl-s2"></span>
-<span class="pl-s2"><span class="pl-s3">echo</span> <span class="pl-vo">$nmlVersion</span><span class="pl-k">.</span>ToString();</span>
-<span class="pl-s2"></span></pre></div>
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-c">//Example of use of Version class:</span></span>
+<span class="pl-s1"><span class="pl-k">use</span> <span class="pl-c1">NelsonMartell\Version</span>;</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-smi">$nmlVersion</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">Version</span>(<span class="pl-c1">0</span>, <span class="pl-c1">3</span>);</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-c1">echo</span> <span class="pl-smi">$nmlVersion</span><span class="pl-k">.</span>ToString();</span>
+<span class="pl-s1"></span></pre></div>
 
-<p>For more details, you can check the <a href="http://nelson6e65.github.io/php_nml/api">API reference</a>.</p>
+<p>For more details, you can check the <a href="http://nelson6e65.github.io/php_nml/api">API Documentation</a>.</p>
+
+<h4>
+<a id="code-analysis" class="anchor" href="#code-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Analysis</h4>
+
+<p>You can, optionally, define the <code>CODE_ANALYSIS</code> constant if you like some notices and warnings to be
+throws while you are coding/debugging. This is useful to watch some recommendations about usage of
+some clases, functions, methods, etc.</p>
+
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
+<span class="pl-s1">    <span class="pl-c">//Other configs of your application</span></span>
+<span class="pl-s1">    <span class="pl-c">//..</span></span>
+<span class="pl-s1">    <span class="pl-c1">define</span>(<span class="pl-s"><span class="pl-pds">'</span>CODE_ANALYSIS<span class="pl-pds">'</span></span>, <span class="pl-c1">true</span>);</span>
+<span class="pl-s1">    <span class="pl-c">//...</span></span></pre></div>
       </section>
     </div>
 
@@ -110,7 +132,7 @@ git submodule update
     <div id="footer_wrap" class="outer">
       <footer class="inner">
         <p class="copyright">PHP: Nelson Martell Library maintained by <a href="https://github.com/nelson6e65">nelson6e65</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
 

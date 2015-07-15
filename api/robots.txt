@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: http://nelson6e65.github.io/php_nml/sitemap.xml

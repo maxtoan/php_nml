@@ -111,6 +111,12 @@
 
 
 
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-NelsonMartell.Extensions.msg.html">msg</a></li>
+				<li><a href="function-NelsonMartell.Extensions.nmsg.html">nmsg</a></li>
+				<li><a href="function-NelsonMartell.Extensions.typeof.html">typeof</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -159,7 +165,7 @@ Cake\Utility\Text
 				\Cake\Utility\Text::insert<br>
 				<b>See:</b>
 				http://book.cakephp.org/3.0/en/core-libraries/text.html<br>
-			<b>Located at</b> <a href="source-class-NelsonMartell.Extensions.String.html#24-175" title="Go to source code">Extensions/String.php</a>
+			<b>Located at</b> <a href="source-class-NelsonMartell.Extensions.String.html#24-193" title="Go to source code">Extensions/String.php</a>
 		<br>
 	</div>
 
@@ -179,7 +185,7 @@ Cake\Utility\Text
 
 			<td class="name"><div>
 			<a class="anchor" href="#_format">#</a>
-			<code><a href="source-class-NelsonMartell.Extensions.String.html#34-80" title="Go to source code">format</a>( <span>string <var>$format</var></span>, <span>array|mixed <var>$args</var></span> )</code>
+			<code><a href="source-class-NelsonMartell.Extensions.String.html#34-98" title="Go to source code">format</a>( <span>string <var>$format</var></span>, <span>string[]|array|mixed <var>$args</var></span> )</code>
 
 			<div class="description short">
 				<p>Replaces format elements in a string with the string representation of an
@@ -218,9 +224,9 @@ Returns: 'Bob is 65 years old, and have 101 cats.'</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$format</var></dt>
-						<dd>A string containing variable placeholders.</dd>
+						<dd>An string containing variable placeholders to be replaced.</dd>
 						<dt><var>$args</var></dt>
-						<dd><p>Object(s) to be replaced into $format
+						<dd><p>Object(s) to be replaced into $format.
   placeholders.</p></dd>
 					</dl></div>
 
@@ -229,10 +235,14 @@ Returns: 'Bob is 65 years old, and have 101 cats.'</p>
 						string
 					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						InvalidArgumentException<br>if $format is not an string or placeholder values are not string-convertibles.
+					</div>
 
 					<h4>Author</h4>
 					<div class="list">
-							Nelson Martell <a href="&#x6d;&#x61;&#105;&#108;&#116;o&#x3a;&#x6e;&#x65;&#108;&#115;o&#x6e;&#x36;&#x65;&#54;&#53;&#45;&#x64;&#x65;&#x76;&#64;&#121;&#97;&#x68;&#x6f;&#x6f;&#46;&#101;&#115;">&#x6e;&#x65;&#108;&#115;o&#x6e;&#x36;&#x65;&#54;&#53;&#45;&#x64;&#x65;&#x76;&#64;&#121;&#97;&#x68;&#x6f;&#x6f;&#46;&#101;&#115;</a><br>
+							Nelson Martell <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x6e;&#101;&#x6c;s&#111;&#x6e;&#54;&#x65;&#54;&#x35;&#64;&#x67;&#109;&#x61;&#105;&#x6c;.&#99;&#x6f;&#109;">&#x6e;&#101;&#x6c;s&#111;&#x6e;&#54;&#x65;&#54;&#x35;&#64;&#x67;&#109;&#x61;&#105;&#x6c;.&#99;&#x6f;&#109;</a><br>
 					</div>
 					<h4>Todo</h4>
 					<div class="list">
@@ -256,7 +266,7 @@ Returns: 'Bob is 65 years old, and have 101 cats.'</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_ensureIsNotNull">#</a>
-			<code><a href="source-class-NelsonMartell.Extensions.String.html#82-98" title="Go to source code">ensureIsNotNull</a>( <span>mixed <var>$obj</var></span> )</code>
+			<code><a href="source-class-NelsonMartell.Extensions.String.html#100-116" title="Go to source code">ensureIsNotNull</a>( <span>mixed <var>$obj</var></span> )</code>
 
 			<div class="description short">
 				<p>Ensures that object given is not null. If is <code>null</code>, throws and exception.</p>
@@ -298,7 +308,7 @@ Returns: 'Bob is 65 years old, and have 101 cats.'</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_ensureIsString">#</a>
-			<code><a href="source-class-NelsonMartell.Extensions.String.html#100-116" title="Go to source code">ensureIsString</a>( <span>mixed <var>$obj</var></span> )</code>
+			<code><a href="source-class-NelsonMartell.Extensions.String.html#118-134" title="Go to source code">ensureIsString</a>( <span>mixed <var>$obj</var></span> )</code>
 
 			<div class="description short">
 				<p>Ensures that object given is an string. Else, thows an exception</p>
@@ -340,7 +350,7 @@ Returns: 'Bob is 65 years old, and have 101 cats.'</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_ensureIsNotEmpty">#</a>
-			<code><a href="source-class-NelsonMartell.Extensions.String.html#118-134" title="Go to source code">ensureIsNotEmpty</a>( <span>string <var>$string</var></span> )</code>
+			<code><a href="source-class-NelsonMartell.Extensions.String.html#136-152" title="Go to source code">ensureIsNotEmpty</a>( <span>string <var>$string</var></span> )</code>
 
 			<div class="description short">
 				<p>Ensures that given string is not empty.</p>
@@ -382,7 +392,7 @@ Returns: 'Bob is 65 years old, and have 101 cats.'</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_ensureIsNotWhiteSpaces">#</a>
-			<code><a href="source-class-NelsonMartell.Extensions.String.html#136-153" title="Go to source code">ensureIsNotWhiteSpaces</a>( <span>string <var>$string</var></span> )</code>
+			<code><a href="source-class-NelsonMartell.Extensions.String.html#154-171" title="Go to source code">ensureIsNotWhiteSpaces</a>( <span>string <var>$string</var></span> )</code>
 
 			<div class="description short">
 				<p>Ensures that given string is not empty or whitespaces.</p>
@@ -428,7 +438,7 @@ Returns: 'Bob is 65 years old, and have 101 cats.'</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_ensureIsValidVarName">#</a>
-			<code><a href="source-class-NelsonMartell.Extensions.String.html#155-174" title="Go to source code">ensureIsValidVarName</a>( <span>string <var>$string</var></span> )</code>
+			<code><a href="source-class-NelsonMartell.Extensions.String.html#173-192" title="Go to source code">ensureIsValidVarName</a>( <span>string <var>$string</var></span> )</code>
 
 			<div class="description short">
 				<p>Ensures that an string follows the PHP variables naming convention.</p>

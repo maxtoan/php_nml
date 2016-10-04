@@ -114,7 +114,10 @@
 			<h3>Interfaces</h3>
 			<ul>
 				<li><a href="class-NelsonMartell.IComparable.html">IComparable</a></li>
+				<li><a href="class-NelsonMartell.IComparer.html">IComparer</a></li>
+				<li><a href="class-NelsonMartell.ICustomPrefixedPropertiesContainer.html">ICustomPrefixedPropertiesContainer</a></li>
 				<li><a href="class-NelsonMartell.IEquatable.html">IEquatable</a></li>
+				<li><a href="class-NelsonMartell.IStrictPropertiesContainer.html">IStrictPropertiesContainer</a></li>
 			</ul>
 
 			<h3>Traits</h3>
@@ -124,6 +127,12 @@
 
 
 
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-NelsonMartell.msg.html">msg</a></li>
+				<li><a href="function-NelsonMartell.nmsg.html">nmsg</a></li>
+				<li><a href="function-NelsonMartell.typeof.html">typeof</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -137,12 +146,16 @@
 
 
 	<div class="description">
-	<p>Clase base de objetos, para encapsular propiedades y otros métodos básicos.</p>
+	<p>Base class that encapsulates strict properties and other basic features.</p>
 	</div>
 
 	<dl class="tree well">
 		<dd style="padding-left:0px">
 <b><span>NelsonMartell\Object</span></b>			
+			 implements 
+				<a href="class-NelsonMartell.IComparer.html"><span>NelsonMartell\IComparer</span></a>, 
+			
+				<a href="class-NelsonMartell.IStrictPropertiesContainer.html"><span>NelsonMartell\IStrictPropertiesContainer</span></a>
 			
 			 uses 
 					<a href="class-NelsonMartell.PropertiesHandler.html"><span>NelsonMartell\PropertiesHandler</span></a>
@@ -180,31 +193,10 @@
 		
 
 				<b>Author:</b>
-				Nelson Martell <a href="&#x6d;&#x61;&#105;&#108;&#116;o&#x3a;&#x6e;&#x65;&#108;&#115;o&#x6e;&#x36;&#x65;&#54;&#53;&#45;&#x64;&#x65;&#x76;&#64;&#121;&#97;&#x68;&#x6f;&#x6f;&#46;&#101;&#115;">&#x6e;&#x65;&#108;&#115;o&#x6e;&#x36;&#x65;&#54;&#53;&#45;&#x64;&#x65;&#x76;&#64;&#121;&#97;&#x68;&#x6f;&#x6f;&#46;&#101;&#115;</a><br>
-				<b>Example:</b>
-				<p>Para usar los getter y setter de los atributos como propiedades, el atributo debe
-ser privado y su nombre tipo cammel, iniciando con $_, y su propiedad para get/set debe
-iniciar en Mayúscula, sin '_'. Ejemplo:</p>
-
-<p>private $_nombre = ''; //Atributo
-public $Nombre; //Propiedad para acceder a $_nombre</p>
-
-<p>Luego, las respectivas funciones siguiendo el formato "get_" o "set_", seguido del nombre de
-la propiedad.</p>
-
-<p>public function getNombre() {
-        return $this->_nombre;
-}</p>
-
-<p>public function setNombre(string $value) {
-        // Validaciones
-        $this->_nombre = $value;
-}</p>
-
-<p>Además, para habilitar esta funcionalidad de propiedades, el constructor debe la siguiente
-línea:
-    unset($this->Nombre);</p><br>
-			<b>Located at</b> <a href="source-class-NelsonMartell.Object.html#24-171" title="Go to source code">Object.php</a>
+				Nelson Martell <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x6e;&#101;&#x6c;s&#111;&#x6e;&#54;&#x65;&#54;&#x35;&#64;&#x67;&#109;&#x61;&#105;&#x6c;.&#99;&#x6f;&#109;">&#x6e;&#101;&#x6c;s&#111;&#x6e;&#54;&#x65;&#54;&#x35;&#64;&#x67;&#109;&#x61;&#105;&#x6c;.&#99;&#x6f;&#109;</a><br>
+				<b>See:</b>
+				<code><a href="class-NelsonMartell.PropertiesHandler.html">NelsonMartell\PropertiesHandler</a></code><br>
+			<b>Located at</b> <a href="source-class-NelsonMartell.Object.html#24-230" title="Go to source code">Object.php</a>
 		<br>
 	</div>
 
@@ -224,7 +216,7 @@ línea:
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-NelsonMartell.Object.html#58-60" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-NelsonMartell.Object.html#35-37" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
 				
@@ -253,7 +245,7 @@ línea:
 
 			<td class="name"><div>
 			<a class="anchor" href="#___toString">#</a>
-			<code><a href="source-class-NelsonMartell.Object.html#62-75" title="Go to source code">__toString</a>( )</code>
+			<code><a href="source-class-NelsonMartell.Object.html#39-52" title="Go to source code">__toString</a>( )</code>
 
 			<div class="description short">
 				<p>Convierte esta instancia en su representación de cadena.
@@ -294,7 +286,7 @@ la función ObjectClass::toString()</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_toString">#</a>
-			<code><a href="source-class-NelsonMartell.Object.html#77-106" title="Go to source code">toString</a>( )</code>
+			<code><a href="source-class-NelsonMartell.Object.html#54-83" title="Go to source code">toString</a>( )</code>
 
 			<div class="description short">
 				<p>Convierte la instancia actual en su representación de cadena.</p>
@@ -327,7 +319,7 @@ la función ObjectClass::toString()</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_equals">#</a>
-			<code><a href="source-class-NelsonMartell.Object.html#108-136" title="Go to source code">equals</a>( <span> <var>$other</var></span> )</code>
+			<code><a href="source-class-NelsonMartell.Object.html#85-113" title="Go to source code">equals</a>( <span> <var>$other</var></span> )</code>
 
 			<div class="description short">
 				
@@ -349,58 +341,91 @@ la función ObjectClass::toString()</p>
 
 			<td class="attributes"><code>
 				 public static
-				integer
+				integer|null
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_compare">#</a>
-			<code><a href="source-class-NelsonMartell.Object.html#138-170" title="Go to source code">compare</a>( <span>mixed <var>$left</var></span>, <span>mixed <var>$right</var></span> )</code>
+			<code><a href="source-class-NelsonMartell.Object.html#115-229" title="Go to source code">compare</a>( <span>mixed <var>$left</var></span>, <span>mixed <var>$right</var></span> )</code>
 
 			<div class="description short">
-				<p>Determina la posición relativa del objeto de la derecha con respecto
-al de la izquierda.
-Puede usarse como segundo argumento en la función de ordenamiento de
-arrays 'usort'.</p>
+				<p>Determina la posición relativa del objeto de la izquierda con respecto al de la derecha.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>Determina la posición relativa del objeto de la derecha con respecto
-al de la izquierda.
-Puede usarse como segundo argumento en la función de ordenamiento de
+				<p>Determina la posición relativa del objeto de la izquierda con respecto al de la derecha.</p>
+
+<p>Compatible with, strings, integers, boolean, arrays and classes implementing <code>IComparable</code> interface.</p>
+
+<p>Puede usarse como segundo argumento en la función de ordenamiento de
 arrays 'usort'.</p>
+
+<p>Notes:
+- Comparison is made in natural way if they are of the same type. If not, is used the PHP standard
+comparison.
+- If <code>$left</code> and <code>$right</code> are arrays, comparison is made by first by 'key' (as strings) and then by 'values' (using this method recursively).</p>
+
+<h1>Override</h1>
+
+<p>You can override this method to implement a contextual sorting behaviour for <code>usort()</code> function.
+If you only need to compare instances of your class with other objects, implement
+<code>NelsonMartell\IComparable</code> instead.</p>
 
 
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$left</var></dt>
-						<dd>Objeto de la izquierda</dd>
+						<dd>Left object.</dd>
 						<dt><var>$right</var></dt>
-						<dd>Objeto de la derecha</dd>
+						<dd>Right object.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
 					<div class="list">
-						integer<br><p><code>0</code>, si ambos son iguales; <code>&gt;0</code>, si $right es mayor a
-  $left; <code>&lt;0</code>, si $left es mayor a $right.</p>
+						integer|null<br><p>Returns:
+  - <code>= 0</code> if $left is considered equivalent to $other;
+  - <code>&gt; 0</code> if $left is considered greater than $other;
+  - <code>&lt; 0</code> if $left is considered less than $other;
+  - <code>null</code> if $left can't be compared to $other .</p>
 					</div>
 
 
+					<h4>See</h4>
+					<div class="list">
+							<code><a href="class-NelsonMartell.IComparer.html#_compare">NelsonMartell\IComparer::compare()</a></code><br>
+							<code><a href="class-NelsonMartell.IComparable.html#_compareTo">NelsonMartell\IComparable::compareTo()</a></code><br>
+							\strnatcmp()<br>
+							\usort()<br>
+					</div>
 
 
+					<h4>Implementation of</h4>
+					<div class="list"><code><a href="class-NelsonMartell.IComparer.html#_compare">NelsonMartell\IComparer::compare()</a></code></div>
 			</div>
 			</div></td>
 		</tr>
 			</table>
 		</div>
 
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-NelsonMartell.IStrictPropertiesContainer.html#methods">NelsonMartell\IStrictPropertiesContainer</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-NelsonMartell.IStrictPropertiesContainer.html#___get">__get()</a></code>, 
+				<code><a href="class-NelsonMartell.IStrictPropertiesContainer.html#___set">__set()</a></code>
+			</p>
+		</div>
 
 		<div class="panel panel-default">
 	        <div class="panel-heading"><h3>Methods used from <a href="class-NelsonMartell.PropertiesHandler.html#methods">NelsonMartell\PropertiesHandler</a></h3></div>
 			<p class="elementList">
 				<code><a href="class-NelsonMartell.PropertiesHandler.html#___get">__get()</a></code>, 
-				<code><a href="class-NelsonMartell.PropertiesHandler.html#___set">__set()</a></code>
+				<code><a href="class-NelsonMartell.PropertiesHandler.html#___set">__set()</a></code>, 
+				<code><a href="class-NelsonMartell.PropertiesHandler.html#_ensureMethodExists">ensureMethodExists()</a></code>, 
+				<code><a href="class-NelsonMartell.PropertiesHandler.html#_ensurePropertyExists">ensurePropertyExists()</a></code>, 
+				<code><a href="class-NelsonMartell.PropertiesHandler.html#_getPropertyGetter">getPropertyGetter()</a></code>, 
+				<code><a href="class-NelsonMartell.PropertiesHandler.html#_getPropertySetter">getPropertySetter()</a></code>
 			</p>
 		</div>
 
@@ -408,22 +433,6 @@ arrays 'usort'.</p>
 
 
 
-
-
-
-
-		<div class="panel panel-default">
-            <div class="panel-heading"><h2>Properties summary</h2></div>
-		</div>
-
-
-		<div class="panel panel-default">
-            <div class="panel-heading"><h3>Properties used from <a href="class-NelsonMartell.PropertiesHandler.html#properties">NelsonMartell\PropertiesHandler</a></h3></div>
-			<p class="elementList">
-				<code><a href="class-NelsonMartell.PropertiesHandler.html#$getterPrefix"><var>$getterPrefix</var></a></code>, 
-				<code><a href="class-NelsonMartell.PropertiesHandler.html#$setterPrefix"><var>$setterPrefix</var></a></code>
-			</p>
-		</div>
 
 
 

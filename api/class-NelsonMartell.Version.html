@@ -114,7 +114,10 @@
 			<h3>Interfaces</h3>
 			<ul>
 				<li><a href="class-NelsonMartell.IComparable.html">IComparable</a></li>
+				<li><a href="class-NelsonMartell.IComparer.html">IComparer</a></li>
+				<li><a href="class-NelsonMartell.ICustomPrefixedPropertiesContainer.html">ICustomPrefixedPropertiesContainer</a></li>
 				<li><a href="class-NelsonMartell.IEquatable.html">IEquatable</a></li>
+				<li><a href="class-NelsonMartell.IStrictPropertiesContainer.html">IStrictPropertiesContainer</a></li>
 			</ul>
 
 			<h3>Traits</h3>
@@ -124,6 +127,12 @@
 
 
 
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-NelsonMartell.msg.html">msg</a></li>
+				<li><a href="function-NelsonMartell.nmsg.html">nmsg</a></li>
+				<li><a href="function-NelsonMartell.typeof.html">typeof</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -146,6 +155,10 @@ No se puede heredar esta clase.</p>
 		<dd style="padding-left:0px">
 			<a href="class-NelsonMartell.Object.html"><span>NelsonMartell\Object</span></a>
 			
+			 implements 
+				<a href="class-NelsonMartell.IComparer.html"><span>NelsonMartell\IComparer</span></a>, 
+			
+				<a href="class-NelsonMartell.IStrictPropertiesContainer.html"><span>NelsonMartell\IStrictPropertiesContainer</span></a>
 			
 			 uses 
 					<a href="class-NelsonMartell.PropertiesHandler.html"><span>NelsonMartell\PropertiesHandler</span></a>
@@ -177,8 +190,8 @@ No se puede heredar esta clase.</p>
 		
 
 				<b>Author:</b>
-				Nelson Martell <a href="&#x6d;&#x61;&#105;&#108;&#116;o&#x3a;&#x6e;&#x65;&#108;&#115;o&#x6e;&#x36;&#x65;&#54;&#53;&#45;&#x64;&#x65;&#x76;&#64;&#121;&#97;&#x68;&#x6f;&#x6f;&#46;&#101;&#115;">&#x6e;&#x65;&#108;&#115;o&#x6e;&#x36;&#x65;&#54;&#53;&#45;&#x64;&#x65;&#x76;&#64;&#121;&#97;&#x68;&#x6f;&#x6f;&#46;&#101;&#115;</a><br>
-			<b>Located at</b> <a href="source-class-NelsonMartell.Version.html#24-417" title="Go to source code">Version.php</a>
+				Nelson Martell <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x6e;&#101;&#x6c;s&#111;&#x6e;&#54;&#x65;&#54;&#x35;&#64;&#x67;&#109;&#x61;&#105;&#x6c;.&#99;&#x6f;&#109;">&#x6e;&#101;&#x6c;s&#111;&#x6e;&#54;&#x65;&#54;&#x35;&#64;&#x67;&#109;&#x61;&#105;&#x6c;.&#99;&#x6f;&#109;</a><br>
+			<b>Located at</b> <a href="source-class-NelsonMartell.Version.html#24-453" title="Go to source code">Version.php</a>
 		<br>
 	</div>
 
@@ -248,7 +261,7 @@ Para comprobar si la versión es válida, usar el método isValid.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_parse">#</a>
-			<code><a href="source-class-NelsonMartell.Version.html#127-188" title="Go to source code">parse</a>( <span><code><a href="class-NelsonMartell.Version.html">NelsonMartell\Version</a></code>|string|integer|float|array <var>$value</var></span> )</code>
+			<code><a href="source-class-NelsonMartell.Version.html#127-184" title="Go to source code">parse</a>( <span><code><a href="class-NelsonMartell.Version.html">NelsonMartell\Version</a></code>|string|integer|float|array <var>$value</var></span> )</code>
 
 			<div class="description short">
 				<p>Convierte una cadena a su representación del tipo Version.</p>
@@ -286,7 +299,7 @@ Para comprobar si la versión es válida, usar el método isValid.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getMajor">#</a>
-			<code><a href="source-class-NelsonMartell.Version.html#200-209" title="Go to source code">getMajor</a>( )</code>
+			<code><a href="source-class-NelsonMartell.Version.html#196-205" title="Go to source code">getMajor</a>( )</code>
 
 			<div class="description short">
 				<p>Getter for Major property.</p>
@@ -323,7 +336,7 @@ Para comprobar si la versión es válida, usar el método isValid.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getMinor">#</a>
-			<code><a href="source-class-NelsonMartell.Version.html#222-231" title="Go to source code">getMinor</a>( )</code>
+			<code><a href="source-class-NelsonMartell.Version.html#218-227" title="Go to source code">getMinor</a>( )</code>
 
 			<div class="description short">
 				<p>Getter for minor property.</p>
@@ -360,7 +373,7 @@ Para comprobar si la versión es válida, usar el método isValid.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getBuild">#</a>
-			<code><a href="source-class-NelsonMartell.Version.html#243-252" title="Go to source code">getBuild</a>( )</code>
+			<code><a href="source-class-NelsonMartell.Version.html#239-248" title="Go to source code">getBuild</a>( )</code>
 
 			<div class="description short">
 				<p>Getter for Build property.</p>
@@ -397,7 +410,7 @@ Para comprobar si la versión es válida, usar el método isValid.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getRevision">#</a>
-			<code><a href="source-class-NelsonMartell.Version.html#264-273" title="Go to source code">getRevision</a>( )</code>
+			<code><a href="source-class-NelsonMartell.Version.html#260-269" title="Go to source code">getRevision</a>( )</code>
 
 			<div class="description short">
 				<p>Getter for Revision property.</p>
@@ -434,7 +447,7 @@ Para comprobar si la versión es válida, usar el método isValid.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_toString">#</a>
-			<code><a href="source-class-NelsonMartell.Version.html#276-304" title="Go to source code">toString</a>( )</code>
+			<code><a href="source-class-NelsonMartell.Version.html#272-300" title="Go to source code">toString</a>( )</code>
 
 			<div class="description short">
 				<p>Convierte la instancia actual en su representación en cadena.
@@ -483,7 +496,7 @@ antes de devolver esta cadena.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isValid">#</a>
-			<code><a href="source-class-NelsonMartell.Version.html#306-356" title="Go to source code">isValid</a>( )</code>
+			<code><a href="source-class-NelsonMartell.Version.html#302-352" title="Go to source code">isValid</a>( )</code>
 
 			<div class="description short">
 				<p>Indica si la instancia actual es un número de versión válido.</p>
@@ -525,7 +538,7 @@ antes de devolver esta cadena.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_equals">#</a>
-			<code><a href="source-class-NelsonMartell.Version.html#358-379" title="Go to source code">equals</a>( <span><code><a href="class-NelsonMartell.Version.html">NelsonMartell\Version</a></code> <var>$other</var></span> )</code>
+			<code><a href="source-class-NelsonMartell.Version.html#354-375" title="Go to source code">equals</a>( <span><code><a href="class-NelsonMartell.Version.html">NelsonMartell\Version</a></code> <var>$other</var></span> )</code>
 
 			<div class="description short">
 				<p>Determina si el objeto $other especificado es igual a la instancia actual.</p>
@@ -561,37 +574,48 @@ antes de devolver esta cadena.</p>
 
 			<td class="attributes"><code>
 				 public 
-				integer
+				integer|null
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_compareTo">#</a>
-			<code><a href="source-class-NelsonMartell.Version.html#384-414" title="Go to source code">compareTo</a>( <span><code><a href="class-NelsonMartell.Version.html">NelsonMartell\Version</a></code> <var>$other</var></span> )</code>
+			<code><a href="source-class-NelsonMartell.Version.html#380-450" title="Go to source code">compareTo</a>( <span><code><a href="class-NelsonMartell.Version.html">NelsonMartell\Version</a></code>|integer|string|mixed <var>$other</var></span> )</code>
 
 			<div class="description short">
-				<p>Determina la posición relativa del objeto especificado con respecto a
-esta instancia.</p>
+				<p>Determina la posición relativa de esta instancia con respecto al objeto especificado.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>Determina la posición relativa del objeto especificado con respecto a
-esta instancia.</p>
+				<p>Determina la posición relativa de esta instancia con respecto al objeto especificado.</p>
+
+<p>For types different than <code>Version</code>:
+- <code>integer</code> and <code>null</code> are always &lt; 0;
+- <code>string</code> and <code>array</code> are parsed and then evaluated (if is not parseable, always > 0);
+- other types are always > 0</p>
 
 
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$other</var></dt>
-						<dd>El otro objeto Version a comparar.</dd>
+						<dd>The other object to compare with.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
 					<div class="list">
-						integer<br><code>0</code>, si es igual; >0, si es mayor; &lt;0, si es menor.
+						integer|null<br><p>Returns:
+  - <code>= 0</code> if this instance is considered equivalent to $other;
+  - <code>&gt; 0</code> si esta instancia se considera mayor a $other;
+  - <code>&lt; 0</code> si esta instancia se considera menor a $other.
+  - <code>null</code> if this instance can't be compared against $other .</p>
 					</div>
 
 
+					<h4>See</h4>
+					<div class="list">
+							<code><a href="class-NelsonMartell.Object.html#_compare">NelsonMartell\Object::compare()</a></code><br>
+					</div>
 
 
 					<h4>Implementation of</h4>
@@ -609,12 +633,23 @@ esta instancia.</p>
 				<code><a href="class-NelsonMartell.Object.html#_compare">compare()</a></code>
 			</p>
 		</div>
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-NelsonMartell.IStrictPropertiesContainer.html#methods">NelsonMartell\IStrictPropertiesContainer</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-NelsonMartell.IStrictPropertiesContainer.html#___get">__get()</a></code>, 
+				<code><a href="class-NelsonMartell.IStrictPropertiesContainer.html#___set">__set()</a></code>
+			</p>
+		</div>
 
 		<div class="panel panel-default">
 	        <div class="panel-heading"><h3>Methods used from <a href="class-NelsonMartell.PropertiesHandler.html#methods">NelsonMartell\PropertiesHandler</a></h3></div>
 			<p class="elementList">
 				<code><a href="class-NelsonMartell.PropertiesHandler.html#___get">__get()</a></code>, 
-				<code><a href="class-NelsonMartell.PropertiesHandler.html#___set">__set()</a></code>
+				<code><a href="class-NelsonMartell.PropertiesHandler.html#___set">__set()</a></code>, 
+				<code><a href="class-NelsonMartell.PropertiesHandler.html#_ensureMethodExists">ensureMethodExists()</a></code>, 
+				<code><a href="class-NelsonMartell.PropertiesHandler.html#_ensurePropertyExists">ensurePropertyExists()</a></code>, 
+				<code><a href="class-NelsonMartell.PropertiesHandler.html#_getPropertyGetter">getPropertyGetter()</a></code>, 
+				<code><a href="class-NelsonMartell.PropertiesHandler.html#_getPropertySetter">getPropertySetter()</a></code>
 			</p>
 		</div>
 
@@ -636,7 +671,7 @@ esta instancia.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-NelsonMartell.Version.html#190-197" title="Go to source code"><var>$Major</var></a>
+					<a href="source-class-NelsonMartell.Version.html#186-193" title="Go to source code"><var>$Major</var></a>
 
 				<div class="description short">
 					<p>Obtiene el valor del componente principal del número de versión del
@@ -665,7 +700,7 @@ Esta propiedad es de sólo lectura.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-NelsonMartell.Version.html#212-219" title="Go to source code"><var>$Minor</var></a>
+					<a href="source-class-NelsonMartell.Version.html#208-215" title="Go to source code"><var>$Minor</var></a>
 
 				<div class="description short">
 					<p>Obtiene el valor del componente secundario del número de versión del
@@ -694,7 +729,7 @@ Esta propiedad es de sólo lectura.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-NelsonMartell.Version.html#233-240" title="Go to source code"><var>$Build</var></a>
+					<a href="source-class-NelsonMartell.Version.html#229-236" title="Go to source code"><var>$Build</var></a>
 
 				<div class="description short">
 					<p>Obtiene el valor del componente de compilación del número de versión
@@ -723,7 +758,7 @@ Esta propiedad es de sólo lectura.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-NelsonMartell.Version.html#254-261" title="Go to source code"><var>$Revision</var></a>
+					<a href="source-class-NelsonMartell.Version.html#250-257" title="Go to source code"><var>$Revision</var></a>
 
 				<div class="description short">
 					<p>Obtiene el valor del componente de revisión del número de versión del
@@ -749,13 +784,6 @@ Esta propiedad es de sólo lectura.</p>
 		</div>
 
 
-		<div class="panel panel-default">
-            <div class="panel-heading"><h3>Properties used from <a href="class-NelsonMartell.PropertiesHandler.html#properties">NelsonMartell\PropertiesHandler</a></h3></div>
-			<p class="elementList">
-				<code><a href="class-NelsonMartell.PropertiesHandler.html#$getterPrefix"><var>$getterPrefix</var></a></code>, 
-				<code><a href="class-NelsonMartell.PropertiesHandler.html#$setterPrefix"><var>$setterPrefix</var></a></code>
-			</p>
-		</div>
 
 
 

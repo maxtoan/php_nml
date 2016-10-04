@@ -113,7 +113,10 @@
 			<h3>Interfaces</h3>
 			<ul>
 				<li><a href="class-NelsonMartell.IComparable.html">IComparable</a></li>
+				<li><a href="class-NelsonMartell.IComparer.html">IComparer</a></li>
+				<li><a href="class-NelsonMartell.ICustomPrefixedPropertiesContainer.html">ICustomPrefixedPropertiesContainer</a></li>
 				<li><a href="class-NelsonMartell.IEquatable.html">IEquatable</a></li>
+				<li><a href="class-NelsonMartell.IStrictPropertiesContainer.html">IStrictPropertiesContainer</a></li>
 			</ul>
 
 			<h3>Traits</h3>
@@ -123,6 +126,12 @@
 
 
 
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-NelsonMartell.msg.html">msg</a></li>
+				<li><a href="function-NelsonMartell.nmsg.html">nmsg</a></li>
+				<li><a href="function-NelsonMartell.typeof.html">typeof</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -161,7 +170,7 @@ El método IntString::toString obtiene esa cadena compuesta.</p></td>
 </tr>
 <tr>
 	<td class="name"><a href="class-NelsonMartell.Object.html">Object</a></td>
-	<td>Clase base de objetos, para encapsular propiedades y otros métodos básicos.</td>
+	<td>Base class that encapsulates strict properties and other basic features.</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-NelsonMartell.Type.html">Type</a></td>
@@ -187,13 +196,26 @@ Extiende la clase IntString, pero restringe los valores que puede tomar.</p></td
 	<table class="summary table table-bordered table-striped" id="interfaces">
 <tr>
 	<td class="name"><a href="class-NelsonMartell.IComparable.html">IComparable</a></td>
-	<td><p>Provee métodos para comparar posición relativa entre objetos del mismo
-tipo, o compatibles.</p></td>
+	<td>Provee métodos para comparar posición relativa de instancia.</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-NelsonMartell.IComparer.html">IComparer</a></td>
+	<td>Provee métodos para comparar posición relativa entre objetos.</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-NelsonMartell.ICustomPrefixedPropertiesContainer.html">ICustomPrefixedPropertiesContainer</a></td>
+	<td><p>Allows use custom getter/setter prefixes in a class in addition to default "get<em>" and "set</em>".
+Access type of method should be marked as final since currently do not allows using multiple
+custom properties.</p></td>
 </tr>
 <tr>
 	<td class="name"><a href="class-NelsonMartell.IEquatable.html">IEquatable</a></td>
 	<td><p>Provee un método para comparar igualdad entre objetos del mismo tipo, o
 compatibles.</p></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-NelsonMartell.IStrictPropertiesContainer.html">IStrictPropertiesContainer</a></td>
+	<td>Mark a class as implementing strict properties only.</td>
 </tr>
 	</table>
 </div>
@@ -203,14 +225,34 @@ compatibles.</p></td>
 	<table class="summary table table-bordered table-striped" id="traits">
 <tr>
 	<td class="name"><a href="class-NelsonMartell.PropertiesHandler.html">PropertiesHandler</a></td>
-	<td><p>Permite encapsular propiedades para usar setters y getters automáticamente.
-Por defecto, esta funcionalidad viene por defecto en la clase Object.</p></td>
+	<td><p>Enables the class to use properties, by encapsulating class attributes in order to use with
+auto-setters/getters methods instead of direct access.</p></td>
 </tr>
 	</table>
 </div>
 
 
 
+<div class="panel panel-default">
+    <div class="panel-heading"><h2>Functions summary</h2></div>
+	<table class="summary table table-bordered table-striped" id="functions">
+<tr>
+	<td class="name"><a href="function-NelsonMartell.msg.html">msg</a></td>
+	<td><p>Busca un mensaje único traducido en el dominio 'nml'.
+El mensaje puede contener cadenas de formato.</p></td>
+</tr>
+<tr>
+	<td class="name"><a href="function-NelsonMartell.nmsg.html">nmsg</a></td>
+	<td><p>Busca un mensaje único, en singular y plural, traducido en el dominio 'nml'.
+El mensaje puede contener cadenas de formato.</p></td>
+</tr>
+<tr>
+	<td class="name"><a href="function-NelsonMartell.typeof.html">typeof</a></td>
+	<td><p>Obtiene el tipo del objeto especificado.
+Es un alias para el constructor de la clase Type.</p></td>
+</tr>
+	</table>
+</div>
 </div>
 	</div>
 
@@ -219,6 +261,6 @@ Por defecto, esta funcionalidad viene por defecto en la clase Object.</p></td>
 	</div>
 </div>
 <script src="resources/combined.js?cde12eb61731d10d358f1ab0ebf28dc34e65fcce"></script>
-<script src="elementlist.js?477a4e68ad01e4fece600b0032d000df5f2c496e"></script>
+<script src="elementlist.js?68f53bb9c79d981b3fa8b3d33c2c685f16b8f066"></script>
 </body>
 </html>

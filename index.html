@@ -32,186 +32,121 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a id="php-nelson-martell-library" class="anchor" href="#php-nelson-martell-library" aria-hidden="true"><span class="octicon octicon-link"></span></a>PHP: Nelson Martell Library</h1>
+<a id="php-nelson-martell-library" class="anchor" href="#php-nelson-martell-library" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PHP: Nelson Martell Library</h1>
 
 <p><a href="https://travis-ci.org/nelson6e65/php_nml"><img src="https://img.shields.io/travis/nelson6e65/php_nml/master.svg" alt="Travis Build Status"></a>
-<a href="https://scrutinizer-ci.com/g/nelson6e65/php_nml/?branch=master"><img src="https://scrutinizer-ci.com/g/nelson6e65/php_nml/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
-<a href="https://scrutinizer-ci.com/g/nelson6e65/php_nml/?branch=master"><img src="https://scrutinizer-ci.com/g/nelson6e65/php_nml/badges/coverage.png?b=master" alt="Code Coverage"></a>
-<a href="https://scrutinizer-ci.com/g/nelson6e65/php_nml/build-status/master"><img src="https://scrutinizer-ci.com/g/nelson6e65/php_nml/badges/build.png?b=master" alt="Scrutinizer Build Status"></a>
-<a href="https://packagist.org/packages/nelson6e65/php_nml"><img src="https://img.shields.io/packagist/v/nelson6e65/php_nml.svg" alt="Latest Version"></a></p>
+<a href="https://scrutinizer-ci.com/g/nelson6e65/php_nml/?branch=master"><img src="https://img.shields.io/scrutinizer/g/nelson6e65/php_nml.svg" alt="Scrutinizer"></a>
+<a href="https://scrutinizer-ci.com/g/nelson6e65/php_nml/?branch=master"><img src="https://img.shields.io/scrutinizer/coverage/g/nelson6e65/php_nml.svg" alt="Scrutinizer Coverage"></a>
+<a href="https://scrutinizer-ci.com/g/nelson6e65/php_nml/build-status/master"><img src="https://img.shields.io/scrutinizer/build/g/nelson6e65/php_nml.svg?b=master" alt="Scrutinizer Build Status"></a>
+<a href="https://www.versioneye.com/php/nelson6e65:php_nml#dependencies"><img src="https://img.shields.io/versioneye/d/php/nelson6e65:php_nml.svg" alt="VersionEye"></a></p>
 
-<p><a href="http://nelson6e65.github.io/php_nml/api"><img src="http://img.shields.io/badge/documentation-API-yellow.svg" alt="API Documentation"></a>
-<a href="https://github.com/nelson6e65/php_nml/wiki"><img src="http://img.shields.io/badge/documentation-WIKI-lightgray.svg" alt="Wiki Documentation"></a>
-<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a></p>
+<p><a href="https://github.com/nelson6e65/php_nml/tags"><img src="https://img.shields.io/github/tag/nelson6e65/php_nml.svg" alt="GitHub release"></a>
+<a href="https://packagist.org/packages/nelson6e65/php_nml"><img src="https://img.shields.io/packagist/v/nelson6e65/php_nml.svg?label=stable" alt="Latest Version"></a>
+<a href="https://packagist.org/packages/nelson6e65/php_nml#dev-master"><img src="https://img.shields.io/packagist/vpre/nelson6e65/php_nml.svg?label=unstable" alt="Latest unstable Version"></a>
+<a href="http://waffle.io/nelson6e65/php_nml"><img src="https://img.shields.io/waffle/label/nelson6e65/php_nml/wip.svg?label=Work%20in%20progress" alt="Waffle.io"></a>
+<a href="https://github.com/nelson6e65/php_nml/compare/v0.6.0...master"><img src="https://img.shields.io/github/commits-since/nelson6e65/php_nml/v0.6.0.svg" alt="GitHub commits"></a></p>
+
+<p><a href="LICENSE"><img src="https://img.shields.io/github/license/nelson6e65/php_nml.svg" alt="License"></a>
+<a href="http://nelson6e65.github.io/php_nml/api"><img src="http://img.shields.io/badge/documentation-API-yellow.svg" alt="API Documentation"></a>
+<a href="https://github.com/nelson6e65/php_nml/wiki"><img src="http://img.shields.io/badge/documentation-WIKI-lightgray.svg" alt="Wiki Documentation"></a></p>
 
 <p><a href="https://gitter.im/nelson6e65/php_nml?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/nelson6e65/php_nml"></a></p>
 
 
 
 <h2>
-<a id="table-of-content" class="anchor" href="#table-of-content" aria-hidden="true"><span class="octicon octicon-link"></span></a>Table of content</h2>
+<a id="table-of-content" class="anchor" href="#table-of-content" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Table of content</h2>
 
 <ol>
 <li><a href="#description">Description</a></li>
 <li><a href="#requirements">Requirements</a></li>
+<li><a href="#installation">Installation</a></li>
 <li>
-<a href="#installation">Installation</a>
+<a href="#usage">Usage</a>
 
 <ol>
-<li><a href="#before-install">Before install</a></li>
-<li>
-<a href="#install">Install</a>
-
-<ol>
-<li><a href="#via-composer">Via composer</a></li>
-<li><a href="#via-git-submodule">Via git submodule</a></li>
-<li><a href="#manually">Manually</a></li>
-</ol>
-</li>
-<li>
-<a href="#after-install">After install</a>
-
-<ol>
-<li><a href="#for-composer-projects">For composer projects</a></li>
-<li><a href="#for-non-composer-projects">For non-composer projects</a></li>
 <li><a href="#code-analysis">Code Analysis</a></li>
 </ol>
 </li>
-</ol>
-</li>
-<li><a href="#usage">Usage</a></li>
 </ol>
 
 
 
 <h2>
-<a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h2>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h2>
 
 <p>Provides a set of classes for PHP applications.</p>
 
 <p><strong>Note</strong>: This is an unstable repository in development and should be treated as an <strong><em>alpha</em></strong>.</p>
 
 <h2>
-<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
 
 <ul>
 <li>PHP 5.5 or greater</li>
 <li>
-<a href="https://github.com/cakephp/utility">CakePHP Utility Classes</a> <a href="https://github.com/cakephp/utility/releases/tag/3.0.5">3.0.5</a> or grater - Only needed <code>Cake\Utility\Text</code> class, that should be loaded. There is a <a href="vendor/Cake/Utility/Text.php">copy of that class</a> into <code>vendor</code> directory to be auto-used if CakePHP Utility Classes is not available.</li>
+<a href="https://github.com/cakephp/utility">CakePHP Utility Classes</a> <a href="https://github.com/cakephp/utility/releases/tag/3.0.1">^3.0.1</a> or grater - Only required the <code>Cake\Utility\Text</code> class (this is installed by Composer autotically).</li>
 </ul>
 
 <h2>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
 
 <p>Use this instructions to install <strong>NML</strong> into your <code>vendor</code> directory as <code>nelson6e65/php_nml</code>.</p>
 
-<h3>
-<a id="before-install" class="anchor" href="#before-install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Before install</h3>
+<blockquote>
+<p>You will need <a href="https://getcomposer.org">Composer</a> install and update NML and dependecies. For other alternative instructions, read <a href="https://github.com/nelson6e65/php_nml/wiki/Alternative-installation-methods">alternative instructions</a>.</p>
+</blockquote>
 
-<p>This instructions assumes that your current directory is your <em>project root directory</em>. Use CD command as you need (<code>cd path/to/your/project/root</code>) before to proceed.</p>
-
-<p>Example: If your project is located at <code>/home/ltorvalds/github/awesome-php-project</code>, run:</p>
-
-<pre><code>cd /home/ltorvalds/github/awesome-php-project
-</code></pre>
-
-<p><strong>Note</strong>: You may need to install <a href="http://git-scm.com">Git</a> or/and <a href="https://getcomposer.org">Composer</a> in order to run some commands in the next steps.</p>
-
-<h3>
-<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h3>
-
-<h4>
-<a id="via-composer" class="anchor" href="#via-composer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Via composer</h4>
-
-<p>Just run this command (your <code>composer.json</code> will be updated):</p>
-
-<pre><code>composer require nelson6e65/php_nml
-</code></pre>
-
-<p><strong>Note</strong>: Remember to add your <code>vendor</code> dependencies to your <code>.gitignore</code> file. (See <a href="https://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md">why</a>).</p>
+<ul>
+<li>Move to your project root directory. Example: <code>cd /var/www/html/my-awesome-php-project</code>.</li>
+<li>Run <code>composer require nelson6e65/php_nml</code>. This installs <code>php_nml</code> and dependencies in your <code>vendor</code> directory (your <code>composer.json</code> will be updated).</li>
+<li>Configure your app to autoload classes by including the composer autoloader (<code>vendor/autoload.php</code>) in your <code>config.php</code> or <code>bootstrap.php</code> (or whatever file that performs your autoloads). In most of modern PHP frameworks this is made automatically.</li>
+</ul>
 
 <p>Read more about Composer installs <a href="https://getcomposer.org/doc/00-intro.md">here</a>.</p>
 
-<h4>
-<a id="via-git-submodule" class="anchor" href="#via-git-submodule" aria-hidden="true"><span class="octicon octicon-link"></span></a>Via git submodule</h4>
+<p><strong>Note</strong>: Remember to add your <code>vendor</code> dependencies to your <code>.gitignore</code> file. (See <a href="https://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md">why</a>).</p>
 
-<pre><code>git submodule add https://github.com/nelson6e65/php_nml.git vendor/nelson6e65/php_nml
-git submodule init
-git submodule update
-</code></pre>
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
 
-<p><strong>Note</strong>: You can use ssh (<code>git@github.com:nelson6e65/php_nml.git</code>) instead of https.</p>
+<p>After install NML and configure your application, you will be able to use NML classes by importing/aliasing with the <a href="http://php.net/manual/en/language.namespaces.importing.php">use operator</a>:</p>
 
-<p>Read more about Git submodules <a href="http://git-scm.com/book/en/v2/Git-Tools-Submodules">here</a>.</p>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-c">//Example of Version usage:</span></span>
+<span class="pl-s1"><span class="pl-k">use</span> <span class="pl-c1">NelsonMartell\Version</span>;</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-smi">$nmlVersion</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">Version</span>(<span class="pl-c1">0</span>, <span class="pl-c1">6</span>);</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-c">// Create Version object parsing from string</span></span>
+<span class="pl-s1"><span class="pl-smi">$nmlVersion</span> <span class="pl-k">=</span> <span class="pl-c1">Version</span><span class="pl-k">::</span>parse(<span class="pl-s"><span class="pl-pds">'</span>0.6.0<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-c">// Explicit to string</span></span>
+<span class="pl-s1"><span class="pl-c1">echo</span> <span class="pl-smi">$nmlVersion</span><span class="pl-k">-&gt;</span>toString();</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-c">// Implicit to string</span></span>
+<span class="pl-s1"><span class="pl-c1">echo</span> <span class="pl-smi">$nmlVersion</span>;</span>
+<span class="pl-s1"></span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span>
 
-<h4>
-<a id="manually" class="anchor" href="#manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Manually</h4>
+&lt;<span class="pl-ent">p</span>&gt;Nelson Martell Library, version <span class="pl-pse">&lt;?=</span><span class="pl-s1"> <span class="pl-smi">$nmlVersion</span> </span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span>&lt;/<span class="pl-ent">p</span>&gt;
+</pre></div>
 
-<ul>
-<li>Download the lastest <a href="https://github.com/nelson6e65/php_nml/releases">release</a>.</li>
-<li>Unzip that download.</li>
-<li>Rename the resulting folder to <code>php_nml</code>.</li>
-<li>Then move this folder into your <code>vendor/nelson6e65</code> directory (create parent folders as needed).</li>
-</ul>
+<p>For more details about available classes from NML, you can check the <a href="http://nelson6e65.github.io/php_nml/api">API Documentation</a>.</p>
 
 <h3>
-<a id="after-install" class="anchor" href="#after-install" aria-hidden="true"><span class="octicon octicon-link"></span></a>After install</h3>
+<a id="code-analysis" class="anchor" href="#code-analysis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Code Analysis</h3>
 
-<p>After you install NML, you should configure your app to autoload classes.</p>
-
-<h4>
-<a id="for-composer-projects" class="anchor" href="#for-composer-projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>For composer projects</h4>
-
-<p>You must include the composer autoloader (<code>vendor/autoload.php</code>) in your <code>config.php</code> or <code>bootstrap.php</code> (or whatever file that you perform autoload). In most of modern PHP frameworks this is made automatically.</p>
-
-<h4>
-<a id="for-non-composer-projects" class="anchor" href="#for-non-composer-projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>For non-composer projects</h4>
-
-<p>This library implements an auto-load system even for non-composer installs. You must include the <a href="autoload.php">autoloader</a> provided (<code>vendor/nelson6e65/php_nml/autoload.php</code>).</p>
-
-<p>Example:</p>
-
-<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
-<span class="pl-s1">    <span class="pl-c"># app/config.php</span></span>
-<span class="pl-s1">    <span class="pl-c"># . . .</span></span>
-<span class="pl-s1"></span>
-<span class="pl-s1">    <span class="pl-k">require_once</span>(<span class="pl-c1">PROJECT_ROOT</span><span class="pl-k">.</span><span class="pl-s"><span class="pl-pds">'</span>/vendor/nelson6e65/php_nml/autoload.php<span class="pl-pds">'</span></span>);</span>
-<span class="pl-s1">    <span class="pl-c">// Note: 'PROJECT_ROOT' is your root directory (in this case, a PHP constant).</span></span>
-<span class="pl-s1"></span>
-<span class="pl-s1">    <span class="pl-c"># . . .</span></span></pre></div>
-
-<p><strong>Note:</strong> There is a minimal copy of <a href="https://github.com/cakephp/utility">CakePHP Utility Classes</a> in <code>php_nml/vendor/Cake/Utility</code> directory. <code>vendor/nelson6e65/php_nml/autoload.php</code> includes  <code>vendor/nelson6e65/php_nml/vendor/autoload.php</code> file to autoloads that class(es) if there is not available.</p>
-
-<h4>
-<a id="code-analysis" class="anchor" href="#code-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Analysis</h4>
-
-<p>You can, optionally, define the <code>CODE_ANALYSIS</code> constant if you like some notices and warnings to be
-throws while you are coding/debugging. This is useful to watch some recommendations about usage of
+<p>You can, optionally, define the <code>CODE_ANALYSIS</code> constant if you like some notices and warnings to be throws while you are coding/debugging. This is useful to watch some recommendations about usage of
 some classes, functions, methods, etc.</p>
 
-<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
 <span class="pl-s1">    <span class="pl-c"># app/config.php</span></span>
 <span class="pl-s1">    <span class="pl-c"># . . .</span></span>
 <span class="pl-s1"></span>
 <span class="pl-s1">    <span class="pl-c1">define</span>(<span class="pl-s"><span class="pl-pds">'</span>CODE_ANALYSIS<span class="pl-pds">'</span></span>, <span class="pl-c1">true</span>);</span>
 <span class="pl-s1"></span>
-<span class="pl-s1">    <span class="pl-c"># . . .</span></span></pre></div>
-
-<h2>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
-
-<p>After install NML and configure your application, you will be able to use NML classes by importing/aliasing with the <a href="http://php.net/manual/en/language.namespaces.importing.php">use operator</a>:</p>
-
-<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
-<span class="pl-s1"><span class="pl-c">//Example of Version usage:</span></span>
-<span class="pl-s1"><span class="pl-k">use</span> <span class="pl-c1">NelsonMartell\Version</span>;</span>
-<span class="pl-s1"></span>
-<span class="pl-s1"><span class="pl-smi">$nmlVersion</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">Version</span>(<span class="pl-c1">0</span>, <span class="pl-c1">3</span>);</span>
-<span class="pl-s1"></span>
-<span class="pl-s1"><span class="pl-c1">echo</span> <span class="pl-smi">$nmlVersion</span><span class="pl-k">.</span>toString();</span>
-<span class="pl-s1"></span></pre></div>
-
-<p>For more details about available classes from NML, you can check the <a href="http://nelson6e65.github.io/php_nml/api">API Documentation</a>.</p>
+<span class="pl-s1">    <span class="pl-c"># . . .</span></span>
+<span class="pl-s1"></span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></pre></div>
       </section>
     </div>
 

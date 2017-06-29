@@ -21,6 +21,7 @@ before_install:
 install:
   - composer create-project apigen/apigen:dev-master output/apigen-project
   - composer global require apigen/apigen:dev-master
+  - composer require apigen/apigen:dev-master
 
 before_script:
   - composer self-update
@@ -30,6 +31,7 @@ script:
   - vendor/bin/phpunit --verbose --coverage-clover="output/code-coverage/clover.xml"
   - output/apigen-project/bin/apigen generate -h
   - ~/.composer/vendor/bin/apigen generate -h
+  - vendor/bin/apigen generate -h
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar

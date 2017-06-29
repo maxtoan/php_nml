@@ -16,6 +16,7 @@ env:
 
 before_install:
   - composer global config minimum-stability dev
+  - composer global config prefer-stable true
 
 install:
   - composer create-project apigen/apigen:@dev output/apigen-project

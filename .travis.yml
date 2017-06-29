@@ -19,8 +19,8 @@ before_install:
   - composer global config prefer-stable true
 
 install:
-  - composer create-project apigen/apigen:@dev output/apigen-project
-  - composer global require apigen/apigen:@dev
+  - composer create-project apigen/apigen:dev-master output/apigen-project
+  - composer global require apigen/apigen:dev-master
 
 before_script:
   - composer self-update

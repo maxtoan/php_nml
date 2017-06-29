@@ -14,12 +14,22 @@ env:
   global:
   - ENCRYPTION_LABEL: "7dec5f5b26df"
 
+before_install:
+  - composer global config minimum-stability dev
+  - composer global config prefer-stable true
+
+install:
+  - composer create-project apigen/apigen:@dev output/apigen-project
+  - composer global require apigen/apigen:@dev
+
 before_script:
   - composer self-update
   - composer install --no-interaction --dev
 
 script:
   - vendor/bin/phpunit --verbose --coverage-clover="output/code-coverage/clover.xml"
+  - output/apigen-project/bin/apigen generate -h
+  - ~/.composer/vendor/bin/apigen generate -h
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar

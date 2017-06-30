@@ -1,14 +1,7 @@
 language: php
 
 php:
-  - 5.6
-  - 7.0
   - 7.1
-
-matrix:
-  allow_failures:
-    - php: 7.1
-  fast_finish: false
 
 env:
   global:
@@ -19,8 +12,6 @@ before_install:
   - composer global config prefer-stable true
 
 install:
-  - composer create-project apigen/apigen:dev-master output/apigen-project
-  - composer global require apigen/apigen:dev-master
   - composer require apigen/apigen:dev-master
 
 before_script:
@@ -29,16 +20,13 @@ before_script:
 
 script:
   - vendor/bin/phpunit --verbose --coverage-clover="output/code-coverage/clover.xml"
-  - output/apigen-project/bin/apigen generate -h
-  - ~/.composer/vendor/bin/apigen generate -h
-  - vendor/bin/apigen generate -h
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar
   - php ocular.phar code-coverage:upload --format=php-clover "output/code-coverage/clover.xml"
 
 after_success:
-  - if  [ $TRAVIS_PHP_VERSION = '7.1' ] && [ $TRAVIS_BRANCH = 'master' ] && [ $TRAVIS_PULL_REQUEST = 'false' ]; then script/travis-ci/deploy-documentation; fi
+  - vendor/bin/apigen generate src
 
 notifications:
   webhooks:
@@ -46,4 +34,4 @@ notifications:
       - https://webhooks.gitter.im/e/919796e5e6af0283d419
     on_success: always
     on_failure: always
-    on_start: always
+    on_start: never

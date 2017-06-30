@@ -19,11 +19,7 @@ before_script:
   - composer install --no-interaction --dev
 
 script:
-  - vendor/bin/phpunit --verbose --coverage-clover="output/code-coverage/clover.xml"
-
-after_script:
-  - wget https://scrutinizer-ci.com/ocular.phar
-  - php ocular.phar code-coverage:upload --format=php-clover "output/code-coverage/clover.xml"
+  - script/test-code
 
 after_success:
   - script/build-api

@@ -26,7 +26,7 @@ after_script:
   - php ocular.phar code-coverage:upload --format=php-clover "output/code-coverage/clover.xml"
 
 after_success:
-  - vendor/bin/apigen generate src
+  - script/build-api
 
 notifications:
   webhooks:

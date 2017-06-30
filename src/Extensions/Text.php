@@ -29,7 +29,7 @@ use function NelsonMartell\typeof;
  * This class is based on \Cake\Utility\Text of CakePHP(tm) class.
  *
  * @see \Cake\Utility\Text::insert
- * @see http://book.cakephp.org/3.0/en/core-libraries/text.html
+ * @link http://book.cakephp.org/3.0/en/core-libraries/text.html
  * */
 class Text extends TextBase
 {
@@ -165,7 +165,7 @@ class Text extends TextBase
      *
      * @return string Same string given, but ensured that is not whitespaces.
      * @throws InvalidArgumentException if object is not an `string`.
-     * @see    trim
+     * @see    \trim()
      */
     public static function ensureIsNotWhiteSpaces($string)
     {

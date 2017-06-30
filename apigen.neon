@@ -1,30 +1,28 @@
-source:
-  - src
 
-destination: output/api
+parameters:
+  source:
+    - src
 
-quiet: true
+  destination: "output/api"
 
-extensions:
-  - php
+  visibilityLevels:
+    - public
+    - protected
 
-title: "PHP: Nelson Martell Library"
+  annotationGroups:
+    - todo
+    - deprecated
 
-php: false
+  title: "PHP: Nelson Martell Library"
 
-internal: yes
+  baseUrl: "https://nelson6e65.github.io/php_nml/api/"
 
-deprecated: true
+  overwrite: false
 
-todo: true
+  themeDirectory: "vendor/apigen/apigen/packages/ThemeDefault/src"
 
-googleAnalytics: UA-58599811-1
+  googleAnalytics: UA-58599811-1
 
-templateTheme: bootstrap
-
-# templateConfig: /home/nmartell/projects/ThemeBootstrap/src/config.neon
-
-# TODO:
-# Transifex Live JavasCript Settings: 'api_key' value.
-# See: http://docs.transifex.com/live/api/#setting-up-transifex-live-javascript-code
-# transifexLive: cb51c6bb678c4ac4b348ff35244284ed
+  # Transifex Live JavasCript Settings: 'api_key' value.
+  # See: http://docs.transifex.com/live/api/#setting-up-transifex-live-javascript-code
+  transifexLive: cb51c6bb678c4ac4b348ff35244284ed

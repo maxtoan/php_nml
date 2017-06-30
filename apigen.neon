@@ -19,7 +19,7 @@ parameters:
 
   overwrite: false
 
-  themeDirectory: "vendor/apigen/apigen/packages/ThemeDefault/src"
+  themeDirectory: "vendor/apigen/apigen/packages/InexistentTheme/src"
 
   googleAnalytics: UA-58599811-1
 
